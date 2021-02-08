@@ -1,5 +1,5 @@
 # Online Shop
-> Sell merchandise easy!
+> Magazin za prodavane na neshta 
 
 # What it does
 Proekta pokazva interesni funkcionalnostti kato login systema admin systema i razlichni tehnologii kato razor pages, etc.
