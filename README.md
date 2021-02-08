@@ -4,7 +4,7 @@
 # What it does
 Proekta pokazva interesni funkcionalnostti kato login systema admin systema i razlichni tehnologii kato razor pages, etc.
 
-![]()
+![alt text](https://duckduckgo.com/?q=coding+expectation+vs+reality&t=ffab&atb=v234-1&iar=images&iax=images&ia=images&iai=https%3A%2F%2Flearningcontent.cisco.com%2Fimages%2FKA_FirstStepsCoding_Expectation_vs_Reality_v4.png)
 
 ## Installation
 
