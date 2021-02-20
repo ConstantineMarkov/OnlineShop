@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fmqpOiePojp9HzjKuK+rdIuMvJx4g5n7enIDe+C2o6qnBqfjsdLPBI2IHVFxy2sJxWK6gyePS1nRkmCXNPY+cw==",
+  "dgSpecHash": "+4tSoxm85COSczQ8jJtD7jW1kJZaQ+Y6qDWi1HyRp9ApnNCs8HdRKW5AYiuMDmgcgiH3Pk46EG9LCVLMpTiUlQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\maga\\Desktop\\GitRepos\\OnlineShop\\OnlineShop.Tests\\OnlineShop.Tests.csproj",
   "expectedPackageFiles": [
@@ -29,9 +29,11 @@
     "C:\\Users\\maga\\.nuget\\packages\\microsoft.testplatform.objectmodel\\16.8.3\\microsoft.testplatform.objectmodel.16.8.3.nupkg.sha512",
     "C:\\Users\\maga\\.nuget\\packages\\microsoft.testplatform.testhost\\16.8.3\\microsoft.testplatform.testhost.16.8.3.nupkg.sha512",
     "C:\\Users\\maga\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\maga\\.nuget\\packages\\mysqlconnector\\1.1.0\\mysqlconnector.1.1.0.nupkg.sha512",
     "C:\\Users\\maga\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\maga\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
     "C:\\Users\\maga\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
+    "C:\\Users\\maga\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\5.0.0-alpha.2\\pomelo.entityframeworkcore.mysql.5.0.0-alpha.2.nupkg.sha512",
     "C:\\Users\\maga\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\maga\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\maga\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

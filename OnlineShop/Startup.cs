@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using OnlineShop.Models;
+using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore;
 
 namespace OnlineShop
 {
@@ -24,6 +27,9 @@ namespace OnlineShop
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<AppDbContext>(x => x.UseMySql("Server=127.0.0.1;Port=8888;Database=OnlineShop;Uid=root;Pwd=root;",
+                new MySqlServerVersion(new Version(8, 0, 22))));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
