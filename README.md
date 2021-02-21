@@ -23,11 +23,11 @@ Ima nqkolko nuget package-a, koito bi trqbvalo da se instalirat avtomatichno, ak
 Da go napravim.
 
 ## Documentation used to write the project
-[Microsoft Docs](https://docs.microsoft.com/en-us/ef/core/)
-[Microsoft Docs](https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-5.0)
-[Microsoft Docs](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-5.0&tabs=visual-studio)
-[Microsoft Docs](https://docs.microsoft.com/en-us/aspnet/core/security/?view=aspnetcore-5.0)
-[C-SharpCorner](https://www.c-sharpcorner.com/article/tutorial-use-entity-framework-core-5-0-in-net-core-3-1-with-mysql-database-by2/)
+[Microsoft Docs](https://docs.microsoft.com/en-us/ef/core/)<br />
+[Microsoft Docs](https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-5.0)<br />
+[Microsoft Docs](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-5.0&tabs=visual-studio)<br />
+[Microsoft Docs](https://docs.microsoft.com/en-us/aspnet/core/security/?view=aspnetcore-5.0)<br />
+[C-SharpCorner](https://www.c-sharpcorner.com/article/tutorial-use-entity-framework-core-5-0-in-net-core-3-1-with-mysql-database-by2/)<br />
 [EntityFrameworkTutorial](https://www.entityframeworktutorial.net/efcore/entity-framework-core-dbcontext.aspx)
 
 ## Meta
