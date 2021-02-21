@@ -17,9 +17,9 @@
 > Ima nqkolko nuget package-a, koito bi trqbvalo da se instalirat avtomatichno, ako kodite na vs ili vs code.
 
 ## Technologies used
-> ASP.NET Core 
-> Razor Pages
-> MySql
+> ASP.NET Core<br />
+> Razor Pages<br />
+> MySql<br />
 > Entity Framework Core
 
 ## Release History
