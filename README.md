@@ -1,28 +1,27 @@
 # Online Shop
-> Magazin za prodavane na neshta 
+
+> Sell things with ease on our platform.
 
 # What it does
-Proekta pokazva interesni funkcionalnostti kato login systema admin systema i razlichni tehnologii kato razor pages, etc.
+
+> A system for selling products on the web.
 
 ![alt text](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flearningcontent.cisco.com%2Fimages%2FKA_FirstStepsCoding_Expectation_vs_Reality_v4.png&f=1&nofb=1)
 
 ## Installation
 
-Prosto svalqte i buildvate.
-
-## Usage example
-
-Moje da si napravite sample producti s nqkakuv random seed na bazata i da razgledate vsichko.
+> Download, upload to server and run.
 
 ## Development setup
 
-Ima nqkolko nuget package-a, koito bi trqbvalo da se instalirat avtomatichno, ako kodite na vs ili vs code.
+> Ima nqkolko nuget package-a, koito bi trqbvalo da se instalirat avtomatichno, ako kodite na vs ili vs code.
 
 ## Release History
 
-Da go napravim.
+> Da go napravim.
 
 ## Documentation used to write the project
+
 [Microsoft Docs](https://docs.microsoft.com/en-us/ef/core/)<br />
 [Microsoft Docs](https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-5.0)<br />
 [Microsoft Docs](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-5.0&tabs=visual-studio)<br />
