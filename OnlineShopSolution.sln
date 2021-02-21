@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShop", "OnlineShop\On
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShop.Tests", "OnlineShop.Tests\OnlineShop.Tests.csproj", "{138BAC7A-2679-4BE0-9883-1E17D476DEBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NekvaBesnaZadacha", "NekvaBesnaZadacha\NekvaBesnaZadacha.csproj", "{21B7673D-DF3A-4C19-8BD1-123A62FC93CD}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,18 +41,6 @@ Global
 		{138BAC7A-2679-4BE0-9883-1E17D476DEBC}.Release|x64.Build.0 = Release|Any CPU
 		{138BAC7A-2679-4BE0-9883-1E17D476DEBC}.Release|x86.ActiveCfg = Release|Any CPU
 		{138BAC7A-2679-4BE0-9883-1E17D476DEBC}.Release|x86.Build.0 = Release|Any CPU
-		{21B7673D-DF3A-4C19-8BD1-123A62FC93CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{21B7673D-DF3A-4C19-8BD1-123A62FC93CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{21B7673D-DF3A-4C19-8BD1-123A62FC93CD}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{21B7673D-DF3A-4C19-8BD1-123A62FC93CD}.Debug|x64.Build.0 = Debug|Any CPU
-		{21B7673D-DF3A-4C19-8BD1-123A62FC93CD}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{21B7673D-DF3A-4C19-8BD1-123A62FC93CD}.Debug|x86.Build.0 = Debug|Any CPU
-		{21B7673D-DF3A-4C19-8BD1-123A62FC93CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{21B7673D-DF3A-4C19-8BD1-123A62FC93CD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{21B7673D-DF3A-4C19-8BD1-123A62FC93CD}.Release|x64.ActiveCfg = Release|Any CPU
-		{21B7673D-DF3A-4C19-8BD1-123A62FC93CD}.Release|x64.Build.0 = Release|Any CPU
-		{21B7673D-DF3A-4C19-8BD1-123A62FC93CD}.Release|x86.ActiveCfg = Release|Any CPU
-		{21B7673D-DF3A-4C19-8BD1-123A62FC93CD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

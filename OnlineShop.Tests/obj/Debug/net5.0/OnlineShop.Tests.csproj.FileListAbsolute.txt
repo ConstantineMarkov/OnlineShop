@@ -91,3 +91,4 @@ C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShop.Tests\obj\Debug\net5.0\Onli
 C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShop.Tests\obj\Debug\net5.0\OnlineShop.Tests.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShop.Tests\obj\Debug\net5.0\OnlineShop.Tests.AssemblyInfoInputs.cache
 C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShop.Tests\obj\Debug\net5.0\OnlineShop.Tests.AssemblyInfo.cs
+C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShop.Tests\obj\Debug\net5.0\OnlineShop.Tests.csproj.CoreCompileInputs.cache

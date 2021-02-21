@@ -1,19 +1,27 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using OnlineShop.Models;
-using Microsoft.EntityFrameworkCore;
-using Pomelo.EntityFrameworkCore;
+// <copyright file="Startup.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
 namespace OnlineShop
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.AspNetCore.HttpsPolicy;
+    using Microsoft.EntityFrameworkCore;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Hosting;
+    using OnlineShop.Models;
+    using Pomelo.EntityFrameworkCore;
+
+
+    /// <summary>
+    /// asdasda.
+    /// </summary>
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -28,7 +36,8 @@ namespace OnlineShop
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<AppDbContext>(x => x.UseMySql("Server=127.0.0.1;Port=8888;Database=OnlineShop;Uid=root;Pwd=root;",
+            services.AddDbContext<AppDbContext>(x => x.UseMySql(
+                "Server=127.0.0.1;Port=3306;Database=OnlineShop;Uid=root;Pwd=root;",
                 new MySqlServerVersion(new Version(8, 0, 22))));
         }
 
@@ -42,9 +51,11 @@ namespace OnlineShop
             else
             {
                 app.UseExceptionHandler("/Home/Error");
+
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
