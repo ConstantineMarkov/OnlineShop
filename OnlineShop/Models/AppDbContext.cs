@@ -31,6 +31,15 @@ namespace OnlineShop.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<ProductModel>().HasData(
+                new ProductModel
+                {
+                    ProductId = 1,
+                    Category = "TShirt",
+                    Price = 20,
+                    Count = 10,
+                    Description = "Rand Desc"
+                }) ;
         }
 
         public DbSet<ProductModel> Products { get; set; }

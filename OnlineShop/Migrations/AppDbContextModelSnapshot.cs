@@ -94,6 +94,16 @@ namespace OnlineShop.Migrations
                     b.HasKey("ProductId");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            ProductId = 1,
+                            Category = "TShirt",
+                            Count = 10,
+                            Description = "Rand Desc",
+                            Price = 20
+                        });
                 });
 
             modelBuilder.Entity("OnlineShop.Models.ReviewModel", b =>

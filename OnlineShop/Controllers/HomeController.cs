@@ -18,9 +18,17 @@ namespace OnlineShop.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        private AppDbContext db = new AppDbContext();
+
+
+        public IActionResult Home()
         {
             return View();
+        }
+
+        public IActionResult Index()
+        {
+            return View(db.Products.ToList());
         }
 
         public IActionResult Privacy()
