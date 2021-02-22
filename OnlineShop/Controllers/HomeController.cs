@@ -20,7 +20,6 @@ namespace OnlineShop.Controllers
 
         private AppDbContext db = new AppDbContext();
 
-
         public IActionResult Home()
         {
             return View();
