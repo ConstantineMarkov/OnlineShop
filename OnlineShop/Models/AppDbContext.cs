@@ -31,15 +31,6 @@ namespace OnlineShop.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<ProductModel>().HasData(
-                new ProductModel
-                {
-                    ProductId = 1,
-                    Category = "TShirt",
-                    Price = 20,
-                    Count = 10,
-                    Description = "Rand Desc"
-                }) ;
         }
 
         public DbSet<ProductModel> Products { get; set; }
@@ -47,5 +38,9 @@ namespace OnlineShop.Models
         public DbSet<ReviewModel> Reviews { get; set; }
 
         public DbSet<AccountModel> Accounts { get; set; }
+
+        public DbSet<OrderModel> Orders { get; set; }
+
+        public DbSet<BuyingHistory> BuyingHistory { get; set; }
     }
 }

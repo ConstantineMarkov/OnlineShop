@@ -10,8 +10,21 @@ namespace OnlineShop.Models
     [Table("BuyingHistory")]
     public class BuyingHistory
     {
+        [Key]
+        [Column("Id")]
+        [Required]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
 
-        public int UserId { get; set; }
-        public int ProductId { get; set; }
+        [Column("UserId")]
+        [ForeignKey("FKUserId")]
+        [Required]
+        public AccountModel AccountId { get; set; }
+
+        [Column("OrderId")]
+        [ForeignKey("FKOrdersId")]
+        [Required]
+        public OrderModel OrderId { get; set; }
+
     }
 }

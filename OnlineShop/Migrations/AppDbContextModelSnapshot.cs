@@ -67,6 +67,53 @@ namespace OnlineShop.Migrations
                     b.ToTable("Accounts");
                 });
 
+            modelBuilder.Entity("OnlineShop.Models.BuyingHistory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("Id");
+
+                    b.Property<int>("FKOrdersId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("FKUserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FKOrdersId");
+
+                    b.HasIndex("FKUserId");
+
+                    b.ToTable("BuyingHistory");
+                });
+
+            modelBuilder.Entity("OnlineShop.Models.OrderModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("Id");
+
+                    b.Property<int>("Count")
+                        .HasColumnType("int")
+                        .HasColumnName("Count");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime(6)")
+                        .HasColumnName("Date");
+
+                    b.Property<int>("OrdersProductId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrdersProductId");
+
+                    b.ToTable("Orders");
+                });
+
             modelBuilder.Entity("OnlineShop.Models.ProductModel", b =>
                 {
                     b.Property<int>("ProductId")
@@ -94,16 +141,6 @@ namespace OnlineShop.Migrations
                     b.HasKey("ProductId");
 
                     b.ToTable("Products");
-
-                    b.HasData(
-                        new
-                        {
-                            ProductId = 1,
-                            Category = "TShirt",
-                            Count = 10,
-                            Description = "Rand Desc",
-                            Price = 20
-                        });
                 });
 
             modelBuilder.Entity("OnlineShop.Models.ReviewModel", b =>
@@ -113,7 +150,7 @@ namespace OnlineShop.Migrations
                         .HasColumnType("int")
                         .HasColumnName("Id");
 
-                    b.Property<int>("ProductFK")
+                    b.Property<int>("FKAccountId")
                         .HasColumnType("int");
 
                     b.Property<int>("ProductModel")
@@ -130,18 +167,48 @@ namespace OnlineShop.Migrations
 
                     b.HasKey("ReviewId");
 
-                    b.HasIndex("ProductFK");
+                    b.HasIndex("FKAccountId");
 
                     b.HasIndex("ProductModel");
 
                     b.ToTable("Reviews");
                 });
 
+            modelBuilder.Entity("OnlineShop.Models.BuyingHistory", b =>
+                {
+                    b.HasOne("OnlineShop.Models.OrderModel", "OrderId")
+                        .WithMany()
+                        .HasForeignKey("FKOrdersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OnlineShop.Models.AccountModel", "AccountId")
+                        .WithMany()
+                        .HasForeignKey("FKUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AccountId");
+
+                    b.Navigation("OrderId");
+                });
+
+            modelBuilder.Entity("OnlineShop.Models.OrderModel", b =>
+                {
+                    b.HasOne("OnlineShop.Models.ProductModel", "Product")
+                        .WithMany()
+                        .HasForeignKey("OrdersProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("OnlineShop.Models.ReviewModel", b =>
                 {
-                    b.HasOne("OnlineShop.Models.ProductModel", null)
-                        .WithMany("Reviews")
-                        .HasForeignKey("ProductFK")
+                    b.HasOne("OnlineShop.Models.AccountModel", "Account")
+                        .WithMany()
+                        .HasForeignKey("FKAccountId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -151,12 +218,9 @@ namespace OnlineShop.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Product");
-                });
+                    b.Navigation("Account");
 
-            modelBuilder.Entity("OnlineShop.Models.ProductModel", b =>
-                {
-                    b.Navigation("Reviews");
+                    b.Navigation("Product");
                 });
 #pragma warning restore 612, 618
         }

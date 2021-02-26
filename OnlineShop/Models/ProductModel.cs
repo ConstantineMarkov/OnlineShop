@@ -31,8 +31,5 @@ namespace OnlineShop.Models
 
         [Column("Description")]
         public string Description { get; set; }
-
-        [ForeignKey("ProductFK")]
-        public ICollection<ReviewModel> Reviews { get; set; }
     }
 }

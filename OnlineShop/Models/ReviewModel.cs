@@ -34,6 +34,9 @@ namespace OnlineShop.Models
         [ForeignKey("ProductModel")]
         public ProductModel Product { get; set; }
 
-        public int ProductFK { get; set; }
+        [Column("AccountId")]
+        [Required]
+        [ForeignKey("FKAccountId")]
+        public AccountModel Account { get; set; }
     }
 }

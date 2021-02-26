@@ -20,17 +20,11 @@ namespace OnlineShop.Controllers
 
         private AppDbContext db = new AppDbContext();
 
-        public IActionResult Home()
+        public IActionResult Index()
         {
             return View();
         }
-
-        public IActionResult Index()
-        {
-            return View(db.Products.ToList());
-        }
-
-        public IActionResult Privacy()
+        public IActionResult AboutUs()
         {
             return View();
         }
