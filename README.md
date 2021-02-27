@@ -34,8 +34,10 @@
 * [Microsoft Docs](https://docs.microsoft.com/en-us/aspnet/core/security/?view=aspnetcore-5.0)<br />
 * [C-SharpCorner](https://www.c-sharpcorner.com/article/tutorial-use-entity-framework-core-5-0-in-net-core-3-1-with-mysql-database-by2/)<br />
 * [EntityFrameworkTutorial](https://www.entityframeworktutorial.net/efcore/entity-framework-core-dbcontext.aspx)
+* [IdentityFramework](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-5.0&tabs=visual-studio)
+* [IdentityFramework](https://docs.microsoft.com/en-us/aspnet/core/security/authorization/secure-data?view=aspnetcore-5.0)
 
 ## Meta
 
 Konstantin Markov - kosyo.marko@gmail.com, nqmam drugi socialni medii<br />
-Martin Svilenski - nz email,               marto sushto
+Martin Svilenski  - nz email,              marto sushto
