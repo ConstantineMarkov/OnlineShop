@@ -22,6 +22,10 @@ namespace OnlineShop.Models
         public string Category { get; set; }
 
         [Required]
+        [Column("Name")]
+        public string Name { get; set; }
+
+        [Required]
         [Column("Price")]
         public int Price { get; set; }
 

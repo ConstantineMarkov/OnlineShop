@@ -9,11 +9,11 @@ using OnlineShop.Models;
 
 namespace OnlineShop.Controllers
 {
-    public class ProductController : Controller
+    public class AdminController : Controller
     {
         private readonly AppDbContext _context;
 
-        public ProductController(AppDbContext context)
+        public AdminController(AppDbContext context)
         {
             _context = context;
         }
@@ -53,7 +53,7 @@ namespace OnlineShop.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductId,Category,Price,Count,Description")] ProductModel productModel)
+        public async Task<IActionResult> Create([Bind("ProductId,Category,Name,Price,Count,Description")] ProductModel productModel)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace OnlineShop.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProductId,Category,Price,Count,Description")] ProductModel productModel)
+        public async Task<IActionResult> Edit(int id, [Bind("ProductId,Category,Name,Price,Count,Description")] ProductModel productModel)
         {
             if (id != productModel.ProductId)
             {

@@ -330,11 +330,6 @@ D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\scopedcss\bundle\OnlineS
 D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\OnlineShop.TagHelpers.input.cache
 D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\OnlineShop.TagHelpers.output.cache
 D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\OnlineShop.RazorCoreGenerate.cache
-D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Views\Product\Create.cshtml.g.cs
-D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Views\Product\Delete.cshtml.g.cs
-D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Views\Product\Details.cshtml.g.cs
-D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Views\Product\Edit.cshtml.g.cs
-D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
 D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -347,3 +342,9 @@ D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\OnlineShop.csproj.CopyCo
 D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\OnlineShop.genruntimeconfig.cache
 D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Views\Home\AboutUs.cshtml.g.cs
+D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Views\Admin\Create.cshtml.g.cs
+D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Views\Admin\Delete.cshtml.g.cs
+D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Views\Admin\Details.cshtml.g.cs
+D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Views\Admin\Edit.cshtml.g.cs
+D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+D:\Downloads\Git\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Views\Cart\Index.cshtml.g.cs
