@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using OnlineShop.Models;
 
+
 namespace OnlineShop.Controllers
 {
     public class HomeController : Controller
@@ -20,10 +21,19 @@ namespace OnlineShop.Controllers
 
         private AppDbContext db = new AppDbContext();
 
-        public IActionResult Index()
+        public int CurrentPageIndex{get; set;}
+
+        public const int maxItemDisplay = 9;
+
+        public int PageCount { get; set; }
+
+        public async Task<IActionResult> Index(int? pageNumber)
         {
-            return View();
+            var products = from s in db.Products select s;
+            int pageSize = 9;
+            return View(await PaginatedList<ProductModel>.CreateAsync(products, pageNumber ?? 1, pageSize));
         }
+
         public IActionResult AboutUs()
         {
             return View();

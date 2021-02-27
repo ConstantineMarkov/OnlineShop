@@ -139,8 +139,8 @@ namespace OnlineShop.Migrations
                         .HasColumnType("longtext CHARACTER SET utf8mb4")
                         .HasColumnName("Name");
 
-                    b.Property<int>("Price")
-                        .HasColumnType("int")
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(5,2)")
                         .HasColumnName("Price");
 
                     b.HasKey("ProductId");

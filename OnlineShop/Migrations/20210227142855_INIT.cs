@@ -1,14 +1,10 @@
-﻿// <copyright file="20210226181756_Initial.cs" company="PlaceholderCompany">
-// Copyright (c) PlaceholderCompany. All rights reserved.
-// </copyright>
+﻿using System;
+using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace OnlineShop.Migrations
 {
-    using System;
-    using Microsoft.EntityFrameworkCore.Metadata;
-    using Microsoft.EntityFrameworkCore.Migrations;
-
-    public partial class Initial : Migration
+    public partial class INIT : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -25,7 +21,7 @@ namespace OnlineShop.Migrations
                     FirstName = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: false),
                     LastName = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: false),
                     DateOfBirth = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    PhoneNumber = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -39,9 +35,10 @@ namespace OnlineShop.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Category = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: false),
-                    Price = table.Column<int>(type: "int", nullable: false),
+                    Name = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: false),
+                    Price = table.Column<decimal>(type: "decimal(5,2)", nullable: false),
                     Count = table.Column<int>(type: "int", nullable: false),
-                    Description = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true),
+                    Description = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -56,7 +53,7 @@ namespace OnlineShop.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     OrdersProductId = table.Column<int>(type: "int", nullable: false),
                     Count = table.Column<int>(type: "int", nullable: false),
-                    Date = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    Date = table.Column<DateTime>(type: "datetime(6)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -78,7 +75,7 @@ namespace OnlineShop.Migrations
                     StarCount = table.Column<int>(type: "int", nullable: false),
                     TextReview = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: false),
                     ProductModel = table.Column<int>(type: "int", nullable: false),
-                    FKAccountId = table.Column<int>(type: "int", nullable: false),
+                    FKAccountId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -104,7 +101,7 @@ namespace OnlineShop.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     FKUserId = table.Column<int>(type: "int", nullable: false),
-                    FKOrdersId = table.Column<int>(type: "int", nullable: false),
+                    FKOrdersId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

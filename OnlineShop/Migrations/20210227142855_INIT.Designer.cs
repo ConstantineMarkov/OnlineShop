@@ -9,8 +9,8 @@ using OnlineShop.Models;
 namespace OnlineShop.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210227110619_ADDED_PRODUCT_NAME")]
-    partial class ADDED_PRODUCT_NAME
+    [Migration("20210227142855_INIT")]
+    partial class INIT
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -141,8 +141,8 @@ namespace OnlineShop.Migrations
                         .HasColumnType("longtext CHARACTER SET utf8mb4")
                         .HasColumnName("Name");
 
-                    b.Property<int>("Price")
-                        .HasColumnType("int")
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(5,2)")
                         .HasColumnName("Price");
 
                     b.HasKey("ProductId");

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
+using Microsoft.AspNetCore.Http;
 
 namespace OnlineShop.Models
 {
@@ -26,8 +26,8 @@ namespace OnlineShop.Models
         public string Name { get; set; }
 
         [Required]
-        [Column("Price")]
-        public int Price { get; set; }
+        [Column("Price", TypeName = "decimal(5, 2)")]
+        public decimal Price { get; set; }
 
         [Required]
         [Column("Count")]
@@ -35,5 +35,6 @@ namespace OnlineShop.Models
 
         [Column("Description")]
         public string Description { get; set; }
+
     }
 }
