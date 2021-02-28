@@ -1,0 +1,161 @@
+[33mcommit 3ec08f362335129da2c018dcd474ed61fc282c73[m[33m ([m[1;36mHEAD -> [m[1;32mProjectConnectedToDatabase[m[33m, [m[1;31morigin/ProjectConnectedToDatabase[m[33m)[m
+Author: Martin Svilenski <m.svilenski@gmail.com>
+Date:   Sat Feb 27 21:42:08 2021 +0200
+
+    DropDownCategories
+
+[33mcommit da3925f9707f651475c521d32fc4e0dfd109974a[m
+Author: Martin Svilenski <m.svilenski@gmail.com>
+Date:   Sat Feb 27 20:48:54 2021 +0200
+
+    CategoryDropDown:Part1
+
+[33mcommit 760e424eed4a4771cfb9f1c7e47401ae50e1179b[m
+Author: Martin Svilenski <m.svilenski@gmail.com>
+Date:   Sat Feb 27 19:42:03 2021 +0200
+
+    Added Shop + Pagination
+
+[33mcommit 4061ede8a8d36075fbd2a20418aa0b6b31945008[m
+Author: Martin Svilenski <m.svilenski@gmail.com>
+Date:   Sat Feb 27 13:50:43 2021 +0200
+
+    Views
+
+[33mcommit b69f7f438d5eecaaa0e8eb61bdf223969945a2e5[m
+Author: Martin Svilenski <m.svilenski@gmail.com>
+Date:   Fri Feb 26 20:36:40 2021 +0200
+
+    Database Restructure 2nd Try
+
+[33mcommit 8be9b8b95727afe6acdc70fa13b3636ce345221b[m
+Author: Martin Svilenski <m.svilenski@gmail.com>
+Date:   Fri Feb 26 20:22:27 2021 +0200
+
+    Database Restructure
+
+[33mcommit 9c01808d459bda299941bef5a60e7f3ab0c96de6[m
+Author: Koceto <kosyo.marko@gmail.com>
+Date:   Mon Feb 22 20:59:22 2021 +0200
+
+    Added Controller, CRUD, View for ProductModel
+
+[33mcommit 4b18204f114428253e521a7731dd74a230cf5595[m
+Author: Koceto <kosyo.marko@gmail.com>
+Date:   Mon Feb 22 20:58:15 2021 +0200
+
+    Added Controller, View and CRUD for ProductModel
+
+[33mcommit 6c395be55b74dcd0c3276845ffb795f173ed767d[m
+Author: Koceto <kosyo.marko@gmail.com>
+Date:   Sun Feb 21 14:51:15 2021 +0200
+
+    No Home
+
+[33mcommit bbaf09f6b519d0de21cccdbc808bb284aa93ae85[m
+Author: Koceto <kosyo.marko@gmail.com>
+Date:   Sun Feb 21 14:50:05 2021 +0200
+
+    Home
+
+[33mcommit 768622c530db007f68fc3cb20a173db052603952[m
+Author: Koceto <kosyo.marko@gmail.com>
+Date:   Sun Feb 21 14:48:58 2021 +0200
+
+    Added Views And Dispaly Product
+
+[33mcommit a39e3e46e3d1d93538b13dff9b3fd2f34b2b07c3[m
+Author: Koceto <kosyo.marko@gmail.com>
+Date:   Sun Feb 21 12:39:22 2021 +0200
+
+    Updated appsettings.json
+
+[33mcommit 6e3b31e1c8c5e55fbf725a2df7a63e39cf468176[m
+Author: Koceto <kosyo.marko@gmail.com>
+Date:   Sun Feb 21 12:07:13 2021 +0200
+
+    ProjectConnectedToDatabase
+
+[33mcommit 69bb694e9b403d59ac9608d74e0df04541802837[m
+Author: Koceto <kosyo.marko@gmail.com>
+Date:   Sun Feb 21 11:56:35 2021 +0200
+
+    Molq te raboti
+
+[33mcommit be22f939b30d67874b2dae904a49beed285d401d[m[33m ([m[1;31morigin/BeforeMigration[m[33m)[m
+Author: Koceto <kosyo.marko@gmail.com>
+Date:   Sat Feb 20 14:23:42 2021 +0200
+
+    Package Changes to Pomelo Alpha
+
+[33mcommit 10072752aa309180b8f2012bfabbe9aaed061a29[m
+Author: Koceto <kosyo.marko@gmail.com>
+Date:   Sat Feb 20 13:39:36 2021 +0200
+
+    App before initial migration to DB
+
+[33mcommit 0ee6530ceb4df6f6dc5eaafe7e1a14a3a5b64158[m
+Author: Koceto <kosyo.marko@gmail.com>
+Date:   Sat Feb 20 11:14:31 2021 +0200
+
+    Updated Packages
+
+[33mcommit dfb2382e3fd26e36359f649ef73732699e4a5661[m
+Author: Maga ot oz <45574768+magaOToz@users.noreply.github.com>
+Date:   Mon Feb 8 23:03:20 2021 +0200
+
+    Create SECURITY.md
+
+[33mcommit 0d6dd97d0b498d58b31cdc823aa45951a4b189c4[m
+Author: Maga ot oz <45574768+magaOToz@users.noreply.github.com>
+Date:   Mon Feb 8 22:57:41 2021 +0200
+
+    Update README.md
+
+[33mcommit 2baecf91d8cf098b331945ffe598f79dd59a3bce[m
+Author: Maga ot oz <45574768+magaOToz@users.noreply.github.com>
+Date:   Mon Feb 8 22:57:12 2021 +0200
+
+    Update README.md
+
+[33mcommit 7d023163f912efc9896ad949d60f5edf9d0fb15f[m
+Author: Maga ot oz <45574768+magaOToz@users.noreply.github.com>
+Date:   Mon Feb 8 22:56:18 2021 +0200
+
+    Update README.md
+
+[33mcommit 45e79ae020f558e147dabe90d2c9084efb2b8b2a[m
+Author: Maga ot oz <45574768+magaOToz@users.noreply.github.com>
+Date:   Mon Feb 8 22:55:55 2021 +0200
+
+    Update README.md
+
+[33mcommit f1ec8bdd260f5df1184323e17a36edc64bf8e011[m
+Author: Maga ot oz <45574768+magaOToz@users.noreply.github.com>
+Date:   Mon Feb 8 22:53:30 2021 +0200
+
+    Krasivo README.md
+
+[33mcommit a7492d0e60578d474a96185f64fc46738d40c773[m
+Author: Koceto <kosyo.marko@gmail.com>
+Date:   Mon Feb 8 22:43:19 2021 +0200
+
+    removed new.txt
+
+[33mcommit cc20a7762e2b6b65254613716c6c69b9c4406bec[m[33m ([m[1;31morigin/CreateProject[m[33m)[m
+Author: Koceto <kosyo.marko@gmail.com>
+Date:   Mon Feb 8 22:38:14 2021 +0200
+
+    Added the basic MVC project
+
+[33mcommit 8ed74d2f746be4ed0378620bccc246e7ce49c3b2[m
+Author: Koceto <kosyo.marko@gmail.com>
+Date:   Sat Feb 6 10:11:50 2021 +0200
+
+    Added new.txt to the main branch
+
+[33mcommit 798883a10c2a6fed90ad14d72758bf31b3bf4d64[m
+Author: Maga ot oz <45574768+magaOToz@users.noreply.github.com>
+Date:   Sat Jan 30 13:06:33 2021 +0200
+
+    Initial commit
