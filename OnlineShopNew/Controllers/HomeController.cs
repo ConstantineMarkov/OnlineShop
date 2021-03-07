@@ -10,6 +10,7 @@ namespace OnlineShop.Controllers
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Logging;
     using OnlineShop.Data;
     using OnlineShop.Models;
@@ -23,7 +24,7 @@ namespace OnlineShop.Controllers
             _logger = logger;
         }
 
-        private AppDbContext db = new AppDbContext();
+        private OnlineShopContext db = new OnlineShopContext();
 
         public int CurrentPageIndex { get; set; }
 
@@ -41,6 +42,21 @@ namespace OnlineShop.Controllers
         public IActionResult AboutUs()
         {
             return View();
+        }
+        public async Task<IActionResult> ProductView(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var productModel = await db.Products.FirstOrDefaultAsync(m => m.ProductId == id);
+            if (productModel == null)
+            {
+                return NotFound();
+            }
+
+            return View(productModel);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -18,9 +18,9 @@ namespace OnlineShop.Controllers
 
     public class AdminController : Controller
     {
-        private readonly AppDbContext _context;
+        private readonly OnlineShopContext _context;
 
-        public AdminController(AppDbContext context)
+        public AdminController(OnlineShopContext context)
         {
             _context = context;
         }

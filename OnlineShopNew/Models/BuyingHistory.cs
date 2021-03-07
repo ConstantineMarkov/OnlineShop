@@ -4,6 +4,8 @@
 
 namespace OnlineShop.Models
 {
+    using Microsoft.AspNetCore.Identity;
+    using OnlineShop.Areas.Identity.Data;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
@@ -19,7 +21,7 @@ namespace OnlineShop.Models
         [Column("UserId")]
         [ForeignKey("FKUserId")]
         [Required]
-        public AccountModel AccountId { get; set; }
+        public OnlineShopUser AccountId { get; set; }
 
         [Column("OrderId")]
         [ForeignKey("FKOrdersId")]

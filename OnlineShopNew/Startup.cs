@@ -10,11 +10,13 @@ namespace OnlineShop
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
+    using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.HttpsPolicy;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
+    using OnlineShop.Areas.Identity.Data;
     using OnlineShop.Data;
     using OnlineShop.Models;
     using Pomelo.EntityFrameworkCore;
@@ -36,9 +38,12 @@ namespace OnlineShop
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<AppDbContext>(x => x.UseMySql(
+            services.AddDbContext<OnlineShopContext>(x => x.UseMySql(
                 "Server=127.0.0.1;Port=3306;Database=OnlineShop;Uid=root;Pwd=root;",
                 new MySqlServerVersion(new Version(8, 0, 22))));
+            services.AddDefaultIdentity<OnlineShopUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            .AddEntityFrameworkStores<OnlineShopContext>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,6 +65,8 @@ namespace OnlineShop
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

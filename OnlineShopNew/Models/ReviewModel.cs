@@ -4,7 +4,9 @@
 
 namespace OnlineShop.Models
 {
+    using Microsoft.AspNetCore.Identity;
     using Microsoft.EntityFrameworkCore;
+    using OnlineShop.Areas.Identity.Data;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
@@ -37,6 +39,6 @@ namespace OnlineShop.Models
         [Column("AccountId")]
         [Required]
         [ForeignKey("FKAccountId")]
-        public AccountModel Account { get; set; }
+        public OnlineShopUser Account { get; set; }
     }
 }
