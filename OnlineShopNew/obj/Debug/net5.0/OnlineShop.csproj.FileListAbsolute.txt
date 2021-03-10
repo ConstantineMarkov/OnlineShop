@@ -227,3 +227,5 @@ D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\Razor\Areas\Identity\
 D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\Razor\Views\Home\ProductView.cshtml.g.cs
+D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
