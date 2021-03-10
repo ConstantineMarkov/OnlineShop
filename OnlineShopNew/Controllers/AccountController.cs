@@ -1,15 +1,12 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using OnlineShop.Areas.Identity.Data;
-using OnlineShop.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace OnlineShop.Controllers
+﻿namespace OnlineShop.Controllers
 {
+    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Identity;
+    using Microsoft.AspNetCore.Mvc;
+    using OnlineShop.Data;
+    using OnlineShop.Models;
+
     public class AccountController : Controller
     {
         private readonly UserManager<OnlineShopUser> _userManager;
@@ -21,10 +18,12 @@ namespace OnlineShop.Controllers
             _userManager = userManager;
             _signInManager = signInManager;
         }
+
         public IActionResult Index()
         {
             return View();
         }
+
         public IActionResult Register()
         {
             return View();
@@ -38,7 +37,7 @@ namespace OnlineShop.Controllers
                 var user = new OnlineShopUser
                 {
                     UserName = model.Email,
-                    Email = model.Email,
+                    Email = model.Email
                 };
 
                 var result = await _userManager.CreateAsync(user, model.Password);
@@ -47,7 +46,7 @@ namespace OnlineShop.Controllers
                 {
                     await _signInManager.SignInAsync(user, isPersistent: false);
 
-                    return RedirectToAction("index", "Home");
+                    return RedirectToAction("Index", "Home");
                 }
 
                 foreach (var error in result.Errors)
@@ -56,8 +55,8 @@ namespace OnlineShop.Controllers
                 }
 
                 ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
-
             }
+
             return View(model);
         }
 
@@ -82,7 +81,6 @@ namespace OnlineShop.Controllers
                 }
 
                 ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
-
             }
 
             return View(user);

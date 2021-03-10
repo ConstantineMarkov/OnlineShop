@@ -6,7 +6,7 @@ namespace OnlineShop.Models
 {
     using Microsoft.AspNetCore.Identity;
     using Microsoft.EntityFrameworkCore;
-    using OnlineShop.Areas.Identity.Data;
+    using OnlineShop.Data;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;

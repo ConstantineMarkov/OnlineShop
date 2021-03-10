@@ -5,7 +5,7 @@
 namespace OnlineShop.Models
 {
     using Microsoft.AspNetCore.Identity;
-    using OnlineShop.Areas.Identity.Data;
+    using OnlineShop.Data;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 

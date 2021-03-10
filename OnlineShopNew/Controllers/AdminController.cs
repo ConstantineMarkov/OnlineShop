@@ -4,17 +4,13 @@
 
 namespace OnlineShop.Controllers
 {
-    using System;
     using System.Collections.Generic;
-    using System.IO;
     using System.Linq;
     using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
-    using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.EntityFrameworkCore;
-    using OnlineShop.Data;
     using OnlineShop.Models;
+    using OnlineShop.Data;
 
     public class AdminController : Controller
     {
