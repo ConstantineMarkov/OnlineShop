@@ -40,4 +40,4 @@
 ## Meta
 
 Konstantin Markov - kosyo.marko@gmail.com, nqmam drugi socialni medii<br />
-Martin Svilenski  - nz email,              marto sushto
+Martin Svilenski  - m.svilenski@gmail.com, marto sushto
