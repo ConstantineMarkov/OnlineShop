@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maga\\Desktop\\GitRepos\\OnlineShop\\OnlineShopNew\\OnlineShop.csproj": {}
+    "D:\\Downloads\\Git\\OnlineShopNew\\OnlineShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maga\\Desktop\\GitRepos\\OnlineShop\\OnlineShop.Tests\\OnlineShop.Tests.csproj": {
+    "D:\\Downloads\\Git\\OnlineShop.Tests\\OnlineShop.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maga\\Desktop\\GitRepos\\OnlineShop\\OnlineShop.Tests\\OnlineShop.Tests.csproj",
+        "projectUniqueName": "D:\\Downloads\\Git\\OnlineShop.Tests\\OnlineShop.Tests.csproj",
         "projectName": "OnlineShop.Tests",
-        "projectPath": "C:\\Users\\maga\\Desktop\\GitRepos\\OnlineShop\\OnlineShop.Tests\\OnlineShop.Tests.csproj",
-        "packagesPath": "C:\\Users\\maga\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maga\\Desktop\\GitRepos\\OnlineShop\\OnlineShop.Tests\\obj\\",
+        "projectPath": "D:\\Downloads\\Git\\OnlineShop.Tests\\OnlineShop.Tests.csproj",
+        "packagesPath": "C:\\Users\\Martin\\.nuget\\packages\\",
+        "outputPath": "D:\\Downloads\\Git\\OnlineShop.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\maga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Martin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,21 +90,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\maga\\Desktop\\GitRepos\\OnlineShop\\OnlineShopNew\\OnlineShop.csproj": {
+    "D:\\Downloads\\Git\\OnlineShopNew\\OnlineShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maga\\Desktop\\GitRepos\\OnlineShop\\OnlineShopNew\\OnlineShop.csproj",
+        "projectUniqueName": "D:\\Downloads\\Git\\OnlineShopNew\\OnlineShop.csproj",
         "projectName": "OnlineShop",
-        "projectPath": "C:\\Users\\maga\\Desktop\\GitRepos\\OnlineShop\\OnlineShopNew\\OnlineShop.csproj",
-        "packagesPath": "C:\\Users\\maga\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maga\\Desktop\\GitRepos\\OnlineShop\\OnlineShopNew\\obj\\",
+        "projectPath": "D:\\Downloads\\Git\\OnlineShopNew\\OnlineShop.csproj",
+        "packagesPath": "C:\\Users\\Martin\\.nuget\\packages\\",
+        "outputPath": "D:\\Downloads\\Git\\OnlineShopNew\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\maga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Martin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -118,8 +118,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\maga\\Desktop\\GitRepos\\OnlineShop\\OnlineShop.Tests\\OnlineShop.Tests.csproj": {
-                "projectPath": "C:\\Users\\maga\\Desktop\\GitRepos\\OnlineShop\\OnlineShop.Tests\\OnlineShop.Tests.csproj"
+              "D:\\Downloads\\Git\\OnlineShop.Tests\\OnlineShop.Tests.csproj": {
+                "projectPath": "D:\\Downloads\\Git\\OnlineShop.Tests\\OnlineShop.Tests.csproj"
               }
             }
           }
@@ -201,7 +201,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }

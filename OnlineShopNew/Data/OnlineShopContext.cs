@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using OnlineShop.Models;
 using System;
@@ -8,13 +9,19 @@ using System.Threading.Tasks;
 
 namespace OnlineShop.Data
 {
-    public class OnlineShopContext : IdentityDbContext
+    public class OnlineShopContext : IdentityDbContext<OnlineShopUser>
     {
         public OnlineShopContext()
         {
         }
 
-        public OnlineShopContext(DbContextOptions<OnlineShopContext> options) : base(options) { }
+        private IHttpContextAccessor _contextAccessor;
+
+        public OnlineShopContext(DbContextOptions<OnlineShopContext> options, IHttpContextAccessor contextAccessor)
+            : base(options)
+        {
+            _contextAccessor = contextAccessor;
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -39,5 +46,7 @@ namespace OnlineShop.Data
         public DbSet<CategoryModel> CategoryModel { get; set; }
 
         public DbSet<OnlineShopUser> OnlineShopUsers { get; set; }
+
+        public DbSet<CartModel> CartModel { get; set; }
     }
 }

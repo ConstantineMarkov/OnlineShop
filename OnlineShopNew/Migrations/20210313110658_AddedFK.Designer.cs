@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OnlineShop.Data;
 
 namespace OnlineShop.Migrations
 {
     [DbContext(typeof(OnlineShopContext))]
-    partial class OnlineShopContextModelSnapshot : ModelSnapshot
+    [Migration("20210313110658_AddedFK")]
+    partial class AddedFK
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -243,11 +245,12 @@ namespace OnlineShop.Migrations
                         .HasColumnType("int")
                         .HasColumnName("Count");
 
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int")
-                        .HasColumnName("ProductId");
+                    b.Property<int>("FK_Product_Id")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("FK_Product_Id");
 
                     b.ToTable("Cart");
                 });
@@ -428,6 +431,17 @@ namespace OnlineShop.Migrations
                     b.Navigation("AccountId");
 
                     b.Navigation("OrderId");
+                });
+
+            modelBuilder.Entity("OnlineShop.Models.CartModel", b =>
+                {
+                    b.HasOne("OnlineShop.Models.ProductModel", "ProductId")
+                        .WithMany()
+                        .HasForeignKey("FK_Product_Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ProductId");
                 });
 
             modelBuilder.Entity("OnlineShop.Models.OrderModel", b =>

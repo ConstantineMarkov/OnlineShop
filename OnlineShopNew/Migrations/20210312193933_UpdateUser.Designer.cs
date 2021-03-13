@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OnlineShop.Data;
 
 namespace OnlineShop.Migrations
 {
     [DbContext(typeof(OnlineShopContext))]
-    partial class OnlineShopContextModelSnapshot : ModelSnapshot
+    [Migration("20210312193933_UpdateUser")]
+    partial class UpdateUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -232,26 +234,6 @@ namespace OnlineShop.Migrations
                     b.ToTable("BuyingHistory");
                 });
 
-            modelBuilder.Entity("OnlineShop.Models.CartModel", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("Id");
-
-                    b.Property<int>("Count")
-                        .HasColumnType("int")
-                        .HasColumnName("Count");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int")
-                        .HasColumnName("ProductId");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Cart");
-                });
-
             modelBuilder.Entity("OnlineShop.Models.CategoryModel", b =>
                 {
                     b.Property<int>("Id")
@@ -319,11 +301,16 @@ namespace OnlineShop.Migrations
                         .HasColumnType("longtext CHARACTER SET utf8mb4")
                         .HasColumnName("Name");
 
+                    b.Property<string>("OnlineShopUserId")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(5,2)")
                         .HasColumnName("Price");
 
                     b.HasKey("ProductId");
+
+                    b.HasIndex("OnlineShopUserId");
 
                     b.ToTable("Products");
                 });
@@ -441,6 +428,13 @@ namespace OnlineShop.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("OnlineShop.Models.ProductModel", b =>
+                {
+                    b.HasOne("OnlineShop.Data.OnlineShopUser", null)
+                        .WithMany("Cart")
+                        .HasForeignKey("OnlineShopUserId");
+                });
+
             modelBuilder.Entity("OnlineShop.Models.ReviewModel", b =>
                 {
                     b.HasOne("OnlineShop.Data.OnlineShopUser", "Account")
@@ -458,6 +452,11 @@ namespace OnlineShop.Migrations
                     b.Navigation("Account");
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("OnlineShop.Data.OnlineShopUser", b =>
+                {
+                    b.Navigation("Cart");
                 });
 #pragma warning restore 612, 618
         }

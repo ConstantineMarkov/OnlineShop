@@ -37,6 +37,8 @@ namespace OnlineShop
 
             services.AddIdentity<OnlineShopUser, IdentityRole>().AddEntityFrameworkStores<OnlineShopContext>();
 
+            services.AddHttpContextAccessor();
+
             IServiceCollection serviceCollections = services.Configure<IdentityOptions>(options =>
             {
                 options.Password.RequireDigit = false;

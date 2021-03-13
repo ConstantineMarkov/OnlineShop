@@ -2381,7 +2381,9 @@ textarea.form-control {
   color: #212529;
   text-align: center;
   vertical-align: middle;
-  -webkit-user-select: none;
+  -webkit-
+      
+      -select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
