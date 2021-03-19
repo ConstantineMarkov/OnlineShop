@@ -14,6 +14,10 @@ namespace OnlineShop.Models
     [Table("Orders")]
     public class OrderModel
     {
+        public OrderModel()
+        {
+            Date = DateTime.Now;
+        }
         [Key]
         [Column("Id")]
         [Required]
@@ -23,6 +27,7 @@ namespace OnlineShop.Models
         [Column("ProductId")]
         [ForeignKey("OrdersProductId")]
         [Required]
+        public int ProductId { get; set; }
         public ProductModel Product { get; set; }
 
         [Column("Count")]

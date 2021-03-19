@@ -109,8 +109,17 @@ namespace OnlineShop.Controllers
             return View(cart);
         }
 
-        public IActionResult Order()
+        public async Task<IActionResult> Order()
         {
+            var cartList = CartList();
+            foreach(var item in cartList)
+            {
+                OrderModel order = new OrderModel();
+                order.ProductId = item.ProductId;
+                order.Count = item.Count;
+                db.Add(order);
+                await db.SaveChangesAsync();
+            }
             db.Database.ExecuteSqlRaw("TRUNCATE TABLE cart");
             return RedirectToAction("Index");
         }
