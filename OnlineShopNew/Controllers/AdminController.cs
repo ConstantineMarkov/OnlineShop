@@ -62,7 +62,7 @@ namespace OnlineShop.Controllers
         /// <returns>A <see cref="Task{TResult}"/> representing the result of the asynchronous operation.</returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductId,CategoryId,Name,Price,Count,Description")] ProductModel productModel)
+        public async Task<IActionResult> Create([Bind("Id,CategoryId,Name,Price,Count,Description")] ProductModel productModel)
         {
             if (ModelState.IsValid)
             {
@@ -96,7 +96,7 @@ namespace OnlineShop.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProductId,CategoryId,Name,Price,Count,Description")] ProductModel productModel)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,CategoryId,Name,Price,Count,Description")] ProductModel productModel)
         {
             if (id != productModel.Id)
             {

@@ -5,6 +5,7 @@
 namespace OnlineShop
 {
     using System;
+    using System.Threading.Tasks;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Identity;
@@ -17,6 +18,8 @@ namespace OnlineShop
     /// <summary>
     /// asdasda.
     /// </summary>
+    /// 
+   
     public class Startup
     {
         public Startup(IConfiguration configuration)

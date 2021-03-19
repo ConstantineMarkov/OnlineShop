@@ -17,6 +17,7 @@ namespace OnlineShop.Models
         [Key]
         [Column("Id")]
         [Required]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         [ForeignKey("FK_User_Id")]

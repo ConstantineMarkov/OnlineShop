@@ -22,23 +22,23 @@ namespace OnlineShop.Controllers
         private readonly ILogger<HomeController> _logger;
         private OnlineShopContext db = new OnlineShopContext();
         private UserManager<OnlineShopUser> userManager;
-        public List<CartModel> CartList()
-        {
-            var CartList = db.CartModel.ToList();
-            return CartList;
-        }
-    public int CurrentPageIndex { get; set; }
-
         public const int maxItemDisplay = 9;
-
-        public int PageCount { get; set; }
-
 
         public HomeController(ILogger<HomeController> logger, UserManager<OnlineShopUser> userManager)
         {
             this.userManager = userManager;
             _logger = logger;
         }
+        
+        public List<CartModel> CartList()
+        {
+            var CartList = db.CartModel.ToList();
+            return CartList;
+        }
+
+        public int CurrentPageIndex { get; set; }
+
+        public int PageCount { get; set; }
 
         public async Task<IActionResult> Index(int? pageNumber)
         {
@@ -46,9 +46,9 @@ namespace OnlineShop.Controllers
             int pageSize = 9;
             return View(await PaginatedList<ProductModel>.CreateAsync(products, pageNumber ?? 1, pageSize));
         }
+        
         public async Task<IActionResult> Cart()
         {
-            
             return View(CartList());
         }
         public IActionResult AboutUs()
@@ -82,16 +82,24 @@ namespace OnlineShop.Controllers
         [HttpPost]
         public async Task<IActionResult> Buy(int? id, CartModel cart)
         {
+            if (CartList() != null && CartList().Any())
+            {
+                cart.Id = db.CartModel.Select(x => x.Id).Max() + 1;
+            }
+            else cart.Id = 1;
             var productModel = await db.Products.FirstOrDefaultAsync(m => m.Id == id);
-
+            if(productModel.Count < cart.Count)
+            {
+                throw new InvalidOperationException("Not enough products.");
+            }
+            productModel.Count -= cart.Count;
             OnlineShopUser user = await this.userManager.GetUserAsync(this.User);
             cart.UserId = user.Id;
 
             cart.ProductId = productModel.Id;
-
+            //cart.Product = db.Products.Where(x => x.Id == cart.ProductId).FirstOrDefault();
             var b = CartList();
-
-            if (ModelState.IsValid)
+            //if (ModelState.IsValid)
             {
                 db.Add(cart);
                 await db.SaveChangesAsync();
@@ -103,7 +111,8 @@ namespace OnlineShop.Controllers
 
         public IActionResult Order()
         {
-            return View(nameof(Cart));
+            db.Database.ExecuteSqlRaw("TRUNCATE TABLE cart");
+            return RedirectToAction("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
