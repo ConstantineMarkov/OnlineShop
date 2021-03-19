@@ -9,8 +9,8 @@ using OnlineShop.Data;
 namespace OnlineShop.Migrations
 {
     [DbContext(typeof(OnlineShopContext))]
-    [Migration("20210313105906_Init")]
-    partial class Init
+    [Migration("20210319190558_GalioCart")]
+    partial class GalioCart
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -249,7 +249,13 @@ namespace OnlineShop.Migrations
                         .HasColumnType("int")
                         .HasColumnName("ProductId");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int")
+                        .HasColumnName("UserId");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
 
                     b.ToTable("Cart");
                 });
@@ -298,7 +304,7 @@ namespace OnlineShop.Migrations
 
             modelBuilder.Entity("OnlineShop.Models.ProductModel", b =>
                 {
-                    b.Property<int>("ProductId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasColumnName("Id");
@@ -325,7 +331,7 @@ namespace OnlineShop.Migrations
                         .HasColumnType("decimal(5,2)")
                         .HasColumnName("Price");
 
-                    b.HasKey("ProductId");
+                    b.HasKey("Id");
 
                     b.ToTable("Products");
                 });
@@ -430,6 +436,17 @@ namespace OnlineShop.Migrations
                     b.Navigation("AccountId");
 
                     b.Navigation("OrderId");
+                });
+
+            modelBuilder.Entity("OnlineShop.Models.CartModel", b =>
+                {
+                    b.HasOne("OnlineShop.Models.ProductModel", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("OnlineShop.Models.OrderModel", b =>

@@ -9,8 +9,8 @@ using OnlineShop.Data;
 namespace OnlineShop.Migrations
 {
     [DbContext(typeof(OnlineShopContext))]
-    [Migration("20210312193933_UpdateUser")]
-    partial class UpdateUser
+    [Migration("20210319193107_IntToString")]
+    partial class IntToString
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -234,6 +234,33 @@ namespace OnlineShop.Migrations
                     b.ToTable("BuyingHistory");
                 });
 
+            modelBuilder.Entity("OnlineShop.Models.CartModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("Id");
+
+                    b.Property<int>("Count")
+                        .HasColumnType("int")
+                        .HasColumnName("Count");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int")
+                        .HasColumnName("ProductId");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4")
+                        .HasColumnName("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("Cart");
+                });
+
             modelBuilder.Entity("OnlineShop.Models.CategoryModel", b =>
                 {
                     b.Property<int>("Id")
@@ -278,7 +305,7 @@ namespace OnlineShop.Migrations
 
             modelBuilder.Entity("OnlineShop.Models.ProductModel", b =>
                 {
-                    b.Property<int>("ProductId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasColumnName("Id");
@@ -301,16 +328,11 @@ namespace OnlineShop.Migrations
                         .HasColumnType("longtext CHARACTER SET utf8mb4")
                         .HasColumnName("Name");
 
-                    b.Property<string>("OnlineShopUserId")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
-
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(5,2)")
                         .HasColumnName("Price");
 
-                    b.HasKey("ProductId");
-
-                    b.HasIndex("OnlineShopUserId");
+                    b.HasKey("Id");
 
                     b.ToTable("Products");
                 });
@@ -417,6 +439,17 @@ namespace OnlineShop.Migrations
                     b.Navigation("OrderId");
                 });
 
+            modelBuilder.Entity("OnlineShop.Models.CartModel", b =>
+                {
+                    b.HasOne("OnlineShop.Models.ProductModel", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("OnlineShop.Models.OrderModel", b =>
                 {
                     b.HasOne("OnlineShop.Models.ProductModel", "Product")
@@ -426,13 +459,6 @@ namespace OnlineShop.Migrations
                         .IsRequired();
 
                     b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("OnlineShop.Models.ProductModel", b =>
-                {
-                    b.HasOne("OnlineShop.Data.OnlineShopUser", null)
-                        .WithMany("Cart")
-                        .HasForeignKey("OnlineShopUserId");
                 });
 
             modelBuilder.Entity("OnlineShop.Models.ReviewModel", b =>
@@ -452,11 +478,6 @@ namespace OnlineShop.Migrations
                     b.Navigation("Account");
 
                     b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("OnlineShop.Data.OnlineShopUser", b =>
-                {
-                    b.Navigation("Cart");
                 });
 #pragma warning restore 612, 618
         }

@@ -247,7 +247,14 @@ namespace OnlineShop.Migrations
                         .HasColumnType("int")
                         .HasColumnName("ProductId");
 
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4")
+                        .HasColumnName("UserId");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
 
                     b.ToTable("Cart");
                 });
@@ -296,7 +303,7 @@ namespace OnlineShop.Migrations
 
             modelBuilder.Entity("OnlineShop.Models.ProductModel", b =>
                 {
-                    b.Property<int>("ProductId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasColumnName("Id");
@@ -323,7 +330,7 @@ namespace OnlineShop.Migrations
                         .HasColumnType("decimal(5,2)")
                         .HasColumnName("Price");
 
-                    b.HasKey("ProductId");
+                    b.HasKey("Id");
 
                     b.ToTable("Products");
                 });
@@ -428,6 +435,17 @@ namespace OnlineShop.Migrations
                     b.Navigation("AccountId");
 
                     b.Navigation("OrderId");
+                });
+
+            modelBuilder.Entity("OnlineShop.Models.CartModel", b =>
+                {
+                    b.HasOne("OnlineShop.Models.ProductModel", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("OnlineShop.Models.OrderModel", b =>

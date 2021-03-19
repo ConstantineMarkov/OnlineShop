@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Downloads\\Git\\OnlineShopNew\\OnlineShop.csproj": {}
+    "D:\\Downloads\\Git\\OnlineShop\\OnlineShopNew\\OnlineShop.csproj": {}
   },
   "projects": {
-    "D:\\Downloads\\Git\\OnlineShop.Tests\\OnlineShop.Tests.csproj": {
+    "D:\\Downloads\\Git\\OnlineShop\\OnlineShop.Tests\\OnlineShop.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Downloads\\Git\\OnlineShop.Tests\\OnlineShop.Tests.csproj",
+        "projectUniqueName": "D:\\Downloads\\Git\\OnlineShop\\OnlineShop.Tests\\OnlineShop.Tests.csproj",
         "projectName": "OnlineShop.Tests",
-        "projectPath": "D:\\Downloads\\Git\\OnlineShop.Tests\\OnlineShop.Tests.csproj",
+        "projectPath": "D:\\Downloads\\Git\\OnlineShop\\OnlineShop.Tests\\OnlineShop.Tests.csproj",
         "packagesPath": "C:\\Users\\Martin\\.nuget\\packages\\",
-        "outputPath": "D:\\Downloads\\Git\\OnlineShop.Tests\\obj\\",
+        "outputPath": "D:\\Downloads\\Git\\OnlineShop\\OnlineShop.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Martin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -94,14 +94,14 @@
         }
       }
     },
-    "D:\\Downloads\\Git\\OnlineShopNew\\OnlineShop.csproj": {
+    "D:\\Downloads\\Git\\OnlineShop\\OnlineShopNew\\OnlineShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Downloads\\Git\\OnlineShopNew\\OnlineShop.csproj",
+        "projectUniqueName": "D:\\Downloads\\Git\\OnlineShop\\OnlineShopNew\\OnlineShop.csproj",
         "projectName": "OnlineShop",
-        "projectPath": "D:\\Downloads\\Git\\OnlineShopNew\\OnlineShop.csproj",
+        "projectPath": "D:\\Downloads\\Git\\OnlineShop\\OnlineShopNew\\OnlineShop.csproj",
         "packagesPath": "C:\\Users\\Martin\\.nuget\\packages\\",
-        "outputPath": "D:\\Downloads\\Git\\OnlineShopNew\\obj\\",
+        "outputPath": "D:\\Downloads\\Git\\OnlineShop\\OnlineShopNew\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Martin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -118,8 +118,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Downloads\\Git\\OnlineShop.Tests\\OnlineShop.Tests.csproj": {
-                "projectPath": "D:\\Downloads\\Git\\OnlineShop.Tests\\OnlineShop.Tests.csproj"
+              "D:\\Downloads\\Git\\OnlineShop\\OnlineShop.Tests\\OnlineShop.Tests.csproj": {
+                "projectPath": "D:\\Downloads\\Git\\OnlineShop\\OnlineShop.Tests\\OnlineShop.Tests.csproj"
               }
             }
           }

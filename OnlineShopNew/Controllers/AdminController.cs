@@ -36,7 +36,7 @@ namespace OnlineShop.Controllers
             }
 
             var productModel = await _context.Products
-                .FirstOrDefaultAsync(m => m.ProductId == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (productModel == null)
             {
                 return NotFound();
@@ -98,7 +98,7 @@ namespace OnlineShop.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ProductId,CategoryId,Name,Price,Count,Description")] ProductModel productModel)
         {
-            if (id != productModel.ProductId)
+            if (id != productModel.Id)
             {
                 return NotFound();
             }
@@ -112,7 +112,7 @@ namespace OnlineShop.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProductModelExists(productModel.ProductId))
+                    if (!ProductModelExists(productModel.Id))
                     {
                         return NotFound();
                     }
@@ -135,7 +135,7 @@ namespace OnlineShop.Controllers
             }
 
             var productModel = await _context.Products
-                .FirstOrDefaultAsync(m => m.ProductId == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (productModel == null)
             {
                 return NotFound();
@@ -157,7 +157,7 @@ namespace OnlineShop.Controllers
 
         private bool ProductModelExists(int id)
         {
-            return _context.Products.Any(e => e.ProductId == id);
+            return _context.Products.Any(e => e.Id == id);
         }
     }
 }

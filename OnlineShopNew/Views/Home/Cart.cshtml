@@ -1,11 +1,29 @@
-﻿@model OnlineShop.Controllers.HomeController
-@{
-    ViewData["Title"] = "Cart";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+﻿@model List<CartModel>;
+@{ ViewData["Title"] = "Cart";
+                Layout = "~/Views/Shared/_Layout.cshtml"; }
 
 <h1>Cart</h1>
+@foreach (var item in Model)
+{
+    <div>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @item.ProductId
+            </dt>
+            <dd class="col-sm-10">
+                @item.Count
+            </dd>
+            <div class="card-body">
+                <a asp-controller="Home" asp-action="ProductView" asp-route-id="@item.ProductId">View Item</a>
+            </div>
+        </dl>
+    </div>
+}
 
+<div class="card-body">
+    <a asp-controller="Home" asp-action="Order">Order</a>
+</div>
 
 
 

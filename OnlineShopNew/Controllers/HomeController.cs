@@ -20,18 +20,23 @@ namespace OnlineShop.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
         private OnlineShopContext db = new OnlineShopContext();
-
-        public int CurrentPageIndex { get; set; }
+        private UserManager<OnlineShopUser> userManager;
+        public List<CartModel> CartList()
+        {
+            var CartList = db.CartModel.ToList();
+            return CartList;
+        }
+    public int CurrentPageIndex { get; set; }
 
         public const int maxItemDisplay = 9;
 
         public int PageCount { get; set; }
 
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, UserManager<OnlineShopUser> userManager)
         {
+            this.userManager = userManager;
             _logger = logger;
         }
 
@@ -41,7 +46,11 @@ namespace OnlineShop.Controllers
             int pageSize = 9;
             return View(await PaginatedList<ProductModel>.CreateAsync(products, pageNumber ?? 1, pageSize));
         }
-
+        public async Task<IActionResult> Cart()
+        {
+            
+            return View(CartList());
+        }
         public IActionResult AboutUs()
         {
             return View();
@@ -54,8 +63,8 @@ namespace OnlineShop.Controllers
             {
                 return NotFound();
             }
-
-            var productModel = await db.Products.FirstOrDefaultAsync(m => m.ProductId == id);
+            var a = CartList();
+            var productModel = await db.Products.FirstOrDefaultAsync(m => m.Id == id);
 
             if (productModel == null)
             {
@@ -65,31 +74,42 @@ namespace OnlineShop.Controllers
             return View(productModel);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> ProductView([Bind("ProductId, Count")] CartModel cart)
+        public IActionResult Buy()
         {
-            //ProductModel currentProduct = db.Products.FirstOrDefault(x => x.ProductId == id);
+            return View("Buy", new CartModel());
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Buy(int? id, CartModel cart)
+        {
+            var productModel = await db.Products.FirstOrDefaultAsync(m => m.Id == id);
+
+            OnlineShopUser user = await this.userManager.GetUserAsync(this.User);
+            cart.UserId = user.Id;
+
+            cart.ProductId = productModel.Id;
+
+            var b = CartList();
+
             if (ModelState.IsValid)
             {
                 db.Add(cart);
                 await db.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return View(nameof(ProductView), productModel);
             }
 
             return View(cart);
+        }
+
+        public IActionResult Order()
+        {
+            return View(nameof(Cart));
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-
-
-
-        public IActionResult Cart()
-        {
-            return View();
         }
 
     }

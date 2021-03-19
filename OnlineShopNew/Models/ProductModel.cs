@@ -19,7 +19,7 @@ namespace OnlineShop.Models
         [Column("Id")]
         [Required]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ProductId { get; set; }
+        public int Id { get; set; }
 
         [Required]
         [Column("CategoryId")]

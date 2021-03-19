@@ -2,7 +2,7 @@
 
 namespace OnlineShop.Migrations
 {
-    public partial class UpdatedUser : Migration
+    public partial class Cart : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

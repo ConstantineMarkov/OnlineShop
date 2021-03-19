@@ -9,8 +9,8 @@ using OnlineShop.Data;
 namespace OnlineShop.Migrations
 {
     [DbContext(typeof(OnlineShopContext))]
-    [Migration("20210312194919_UpdatedUser")]
-    partial class UpdatedUser
+    [Migration("20210313121235_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -234,6 +234,27 @@ namespace OnlineShop.Migrations
                     b.ToTable("BuyingHistory");
                 });
 
+            modelBuilder.Entity("OnlineShop.Models.CartModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("Id");
+
+                    b.Property<int>("Count")
+                        .HasColumnType("int")
+                        .HasColumnName("Count");
+
+                    b.Property<int>("FK_Product_Id")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FK_Product_Id");
+
+                    b.ToTable("Cart");
+                });
+
             modelBuilder.Entity("OnlineShop.Models.CategoryModel", b =>
                 {
                     b.Property<int>("Id")
@@ -301,16 +322,11 @@ namespace OnlineShop.Migrations
                         .HasColumnType("longtext CHARACTER SET utf8mb4")
                         .HasColumnName("Name");
 
-                    b.Property<string>("OnlineShopUserId")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
-
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(5,2)")
                         .HasColumnName("Price");
 
                     b.HasKey("ProductId");
-
-                    b.HasIndex("OnlineShopUserId");
 
                     b.ToTable("Products");
                 });
@@ -417,6 +433,17 @@ namespace OnlineShop.Migrations
                     b.Navigation("OrderId");
                 });
 
+            modelBuilder.Entity("OnlineShop.Models.CartModel", b =>
+                {
+                    b.HasOne("OnlineShop.Models.ProductModel", "ProductId")
+                        .WithMany()
+                        .HasForeignKey("FK_Product_Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ProductId");
+                });
+
             modelBuilder.Entity("OnlineShop.Models.OrderModel", b =>
                 {
                     b.HasOne("OnlineShop.Models.ProductModel", "Product")
@@ -426,13 +453,6 @@ namespace OnlineShop.Migrations
                         .IsRequired();
 
                     b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("OnlineShop.Models.ProductModel", b =>
-                {
-                    b.HasOne("OnlineShop.Data.OnlineShopUser", null)
-                        .WithMany("Cart")
-                        .HasForeignKey("OnlineShopUserId");
                 });
 
             modelBuilder.Entity("OnlineShop.Models.ReviewModel", b =>
@@ -452,11 +472,6 @@ namespace OnlineShop.Migrations
                     b.Navigation("Account");
 
                     b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("OnlineShop.Data.OnlineShopUser", b =>
-                {
-                    b.Navigation("Cart");
                 });
 #pragma warning restore 612, 618
         }
