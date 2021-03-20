@@ -13,14 +13,14 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "D:\Downloads\Git\OnlineShop\OnlineShopNew\Views\_ViewImports.cshtml"
+#line 1 "C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\_ViewImports.cshtml"
 using OnlineShop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\Downloads\Git\OnlineShop\OnlineShopNew\Views\_ViewImports.cshtml"
+#line 2 "C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\_ViewImports.cshtml"
 using OnlineShop.Models;
 
 #line default
@@ -62,7 +62,7 @@ using OnlineShop.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
 #nullable restore
-#line 2 "D:\Downloads\Git\OnlineShop\OnlineShopNew\Views\Home\Buy.cshtml"
+#line 2 "C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Home\Buy.cshtml"
   
     ViewData["Title"] = "Buy";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -79,7 +79,7 @@ using OnlineShop.Models;
                 __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper>();
                 __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper);
 #nullable restore
-#line 13 "D:\Downloads\Git\OnlineShop\OnlineShopNew\Views\Home\Buy.cshtml"
+#line 13 "C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Home\Buy.cshtml"
 __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper.ValidationSummary = global::Microsoft.AspNetCore.Mvc.Rendering.ValidationSummary.ModelOnly;
 
 #line default
@@ -98,7 +98,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper.ValidationSumma
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "03d0901134ace7e4375b8be7b3e5c0d96d73c29b7008", async() => {
                     WriteLiteral("\r\n");
 #nullable restore
-#line 17 "D:\Downloads\Git\OnlineShop\OnlineShopNew\Views\Home\Buy.cshtml"
+#line 17 "C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Home\Buy.cshtml"
                      for (int i = 1; i < 100; i++)
                     {
 
@@ -108,7 +108,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper.ValidationSumma
                     WriteLiteral("                        ");
                     __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "03d0901134ace7e4375b8be7b3e5c0d96d73c29b7573", async() => {
 #nullable restore
-#line 19 "D:\Downloads\Git\OnlineShop\OnlineShopNew\Views\Home\Buy.cshtml"
+#line 19 "C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Home\Buy.cshtml"
                                       Write(i);
 
 #line default
@@ -120,7 +120,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper.ValidationSumma
                     __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
                     BeginWriteTagHelperAttribute();
 #nullable restore
-#line 19 "D:\Downloads\Git\OnlineShop\OnlineShopNew\Views\Home\Buy.cshtml"
+#line 19 "C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Home\Buy.cshtml"
                            WriteLiteral(i);
 
 #line default
@@ -138,7 +138,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper.ValidationSumma
                     __tagHelperExecutionContext = __tagHelperScopeManager.End();
                     WriteLiteral("\r\n");
 #nullable restore
-#line 20 "D:\Downloads\Git\OnlineShop\OnlineShopNew\Views\Home\Buy.cshtml"
+#line 20 "C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Home\Buy.cshtml"
                     }
 
 #line default
@@ -150,7 +150,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper.ValidationSumma
                 __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper>();
                 __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
 #nullable restore
-#line 16 "D:\Downloads\Git\OnlineShop\OnlineShopNew\Views\Home\Buy.cshtml"
+#line 16 "C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Home\Buy.cshtml"
 __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = ModelExpressionProvider.CreateModelExpression(ViewData, __model => __model.Count);
 
 #line default

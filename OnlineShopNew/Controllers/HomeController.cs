@@ -21,7 +21,7 @@ namespace OnlineShop.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private UserManager<OnlineShopUser> userManager;
-        private OnlineShopContext db;
+        private OnlineShopContext context;
 
         private const int maxItemDisplay = 9;
         private int CurrentPageIndex { get; set; }
@@ -33,19 +33,19 @@ namespace OnlineShop.Controllers
         {   
             this.userManager = userManager;
             _logger = logger;
-            db = context;
+            this.context = context;
         }
 
         public List<CartModel> CartList()
         {
-            var CartList = db.CartModel.Where(x => x.UserId == userManager.GetUserId(this.User)).ToList();
+            var CartList = context.CartModel.Where(x => x.UserId == userManager.GetUserId(this.User)).ToList();
             
             return CartList;
         }
             
         public async Task<IActionResult> Index(int? pageNumber)
         {
-            var products = from s in db.Products select s;
+            var products = from s in context.Products select s;
             int pageSize = 9;
             
             return View(await PaginatedList<ProductModel>.CreateAsync(products, pageNumber ?? 1, pageSize));
@@ -70,7 +70,7 @@ namespace OnlineShop.Controllers
             }
 
             var a = CartList();
-            var productModel = await db.Products.FirstOrDefaultAsync(m => m.Id == id);
+            var productModel = await context.Products.FirstOrDefaultAsync(m => m.Id == id);
 
             if (productModel == null)
             {
@@ -88,13 +88,13 @@ namespace OnlineShop.Controllers
         [HttpPost]
         public async Task<IActionResult> Buy(int? id, CartModel cart)
         {
-            if (db.CartModel != null && db.CartModel.Any())
+            if (context.CartModel != null && context.CartModel.Any())
             {
-                cart.Id = db.CartModel.Select(x => x.Id).Max() + 1;
+                cart.Id = context.CartModel.Select(x => x.Id).Max() + 1;
             }
             else cart.Id = 1;
 
-            var productModel = await db.Products.FirstOrDefaultAsync(m => m.Id == id);
+            var productModel = await context.Products.FirstOrDefaultAsync(m => m.Id == id);
 
             if (productModel.Count < cart.Count)
             {
@@ -110,8 +110,8 @@ namespace OnlineShop.Controllers
             cart.ProductId = productModel.Id;
             //cart.Product = db.Products.Where(x => x.Id == cart.ProductId).FirstOrDefault();
 
-            db.Add(cart);
-            await db.SaveChangesAsync();
+            context.Add(cart);
+            await context.SaveChangesAsync();
             return View(nameof(ProductView), productModel);
 
             return View(cart);
@@ -126,11 +126,19 @@ namespace OnlineShop.Controllers
                 OrderModel order = new OrderModel();
                 order.ProductId = item.ProductId;
                 order.Count = item.Count;
-                db.Add(order);
-                await db.SaveChangesAsync();
+                context.Add(order);
+                await context.SaveChangesAsync();
             }
 
-            db.Database.ExecuteSqlRaw("TRUNCATE TABLE cart");
+            foreach (var item in cartList)
+            {
+                var cart = item;
+
+                context.CartModel.Remove(cart);
+                await context.SaveChangesAsync();
+            }
+
+            //context.Database.ExecuteSqlRaw("TRUNCATE TABLE cart");
 
             return RedirectToAction("Index");
         }
