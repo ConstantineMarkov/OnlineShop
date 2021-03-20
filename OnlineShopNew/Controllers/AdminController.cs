@@ -113,8 +113,10 @@ namespace OnlineShop.Controllers
                         throw;
                     }
                 }
+
                 return RedirectToAction(nameof(Index));
             }
+
             return View(productModel);
         }
 

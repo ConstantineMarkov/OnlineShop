@@ -30,7 +30,7 @@ namespace OnlineShop.Controllers
         public HomeController(ILogger<HomeController> logger,
             UserManager<OnlineShopUser> userManager,
             OnlineShopContext context)
-        {
+        {   
             this.userManager = userManager;
             _logger = logger;
             db = context;
@@ -41,7 +41,7 @@ namespace OnlineShop.Controllers
             var CartList = db.CartModel.Where(x => x.UserId == userManager.GetUserId(this.User)).ToList();
             return CartList;
         }
-
+            
         public async Task<IActionResult> Index(int? pageNumber)
         {
             var products = from s in db.Products select s;
@@ -66,6 +66,7 @@ namespace OnlineShop.Controllers
             {
                 return NotFound();
             }
+
             var a = CartList();
             var productModel = await db.Products.FirstOrDefaultAsync(m => m.Id == id);
 

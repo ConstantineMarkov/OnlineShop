@@ -60,7 +60,7 @@ namespace OnlineShop.Test
         {
             AdminController ac = new(ctxt);
 
-            var res = ac.Details(null) as IActionResult;
+            var res = ac.Details(1) as IActionResult;
 
             Assert.IsNull(res);
         }
@@ -128,9 +128,6 @@ namespace OnlineShop.Test
                 Description = "asd"
             };
 
-            pm.Description = "asdjh123";
-
-            ctxt.Update(pm);
 
             ctxt.Products.Add(pm);
 
@@ -140,9 +137,18 @@ namespace OnlineShop.Test
 
             var res = ac.Edit(ctxt.Products.FirstOrDefaultAsync().Id, prod);
 
+            pm.Description = "asdjh123";
+
+            var edit2 = ac.Edit(ctxt.Products.FirstOrDefaultAsync().Id, prod);
+
             prod.Name = "poredniq exception";
 
 
+            ctxt.Update(prod);
+            ctxt.Update(pm);
+
+            Assert.AreEqual("asdjh123", pm.Description);
+            Assert.AreNotEqual(pm.Name, "123j");
             Assert.NotNull(res.Id);
             Assert.AreEqual("poredniq exception", prod.Name);
         }
