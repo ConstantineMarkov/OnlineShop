@@ -22,8 +22,10 @@ namespace OnlineShop.Models
         public int Id { get; set; }
 
         [Required]
+        [ForeignKey("FK_CATEGORY_ID")]
         [Column("CategoryId")]
-        public string CategoryId { get; set; }
+        public int CategoryId { get; set; }
+        public CategoryModel Category { get; set; }
 
         [Required]
         [Column("Name")]

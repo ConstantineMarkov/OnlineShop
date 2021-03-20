@@ -17,7 +17,7 @@ namespace OnlineShop.Tests
             om.Product = new ProductModel
             {
                 Count = 100,
-                CategoryId = null,
+                //CategoryId = null,
                 Description = "alo da",
                 Name = "trash",
                 Price = 100,

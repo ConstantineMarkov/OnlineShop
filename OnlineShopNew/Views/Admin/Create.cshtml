@@ -1,5 +1,5 @@
 ﻿@model OnlineShop.Models.ProductModel
-
+@inject OnlineShop.Data.OnlineShopContext context 
 @{
     ViewData["Title"] = "Create";
 }
@@ -21,14 +21,10 @@
                 <label>Category:</label>
                 <select asp-for="CategoryId" class="form-control">
                     <option value="">Please select</option>
-                    <option value="T-Shirt">T-Shirt</option>
-                    <option value="Shirt">Shirt</option>
-                    <option value="Hoodie">Hoodie</option>
-                    <option value="Jeans">Jeans</option>
-                    <option value="Shorts">Shorts</option>
-                    <option value="Backpack">Backpack</option>
-                    <option value="Hat">Hat</option>
-                    <option value="Accessory">Accessory</option>
+                    @foreach(var item in context.CategoryModel)
+                    {
+                        <option value="@item.Id">@item.Name</option>
+                    }
                 </select>
             </div>
 

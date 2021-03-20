@@ -1,4 +1,5 @@
 ﻿@model PaginatedList<OnlineShop.Models.ProductModel>
+@inject OnlineShop.Data.OnlineShopContext context
 @{
     ViewData["Title"] = "Index";
 }
@@ -11,9 +12,10 @@
 
                 <h1 class="my-4">Shop Name</h1>
                 <div class="list-group">
-                    <a href="#" class="list-group-item">Category 1</a>
-                    <a href="#" class="list-group-item">Category 2</a>
-                    <a href="#" class="list-group-item">Category 3</a>
+                    @foreach(var item in context.CategoryModel)
+                    {
+                        <a href="#" class="list-group-item">@item.Name</a>
+                    }
                 </div>
 
             </div>

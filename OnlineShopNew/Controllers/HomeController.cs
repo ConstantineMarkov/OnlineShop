@@ -27,8 +27,8 @@ namespace OnlineShop.Controllers
         private int CurrentPageIndex { get; set; }
         private int PageCount { get; set; }
 
-        public HomeController(ILogger<HomeController> logger, 
-            UserManager<OnlineShopUser> userManager, 
+        public HomeController(ILogger<HomeController> logger,
+            UserManager<OnlineShopUser> userManager,
             OnlineShopContext context)
         {
             this.userManager = userManager;
@@ -85,29 +85,29 @@ namespace OnlineShop.Controllers
         [HttpPost]
         public async Task<IActionResult> Buy(int? id, CartModel cart)
         {
-            if (CartList() != null && CartList().Any())
+            /*if (CartList() != null && CartList().Any())
             {
                 cart.Id = db.CartModel.Select(x => x.Id).Max() + 1;
             }
             else cart.Id = 1;
-            
+            */
             var productModel = await db.Products.FirstOrDefaultAsync(m => m.Id == id);
-            
+
             if (productModel.Count < cart.Count)
             {
                 throw new InvalidOperationException("Not enough products.");
             }
-            
+
             productModel.Count -= cart.Count;
-            
+
             OnlineShopUser user = await this.userManager.GetUserAsync(this.User);
-            
+
             cart.UserId = user.Id;
 
             cart.ProductId = productModel.Id;
             //cart.Product = db.Products.Where(x => x.Id == cart.ProductId).FirstOrDefault();
             var b = CartList();
-            
+
             db.Add(cart);
             await db.SaveChangesAsync();
             return View(nameof(ProductView), productModel);
@@ -118,7 +118,7 @@ namespace OnlineShop.Controllers
         public async Task<IActionResult> Order()
         {
             var cartList = CartList();
-            
+
             foreach (var item in cartList)
             {
                 OrderModel order = new OrderModel();
@@ -127,9 +127,9 @@ namespace OnlineShop.Controllers
                 db.Add(order);
                 await db.SaveChangesAsync();
             }
-            
+
             db.Database.ExecuteSqlRaw("TRUNCATE TABLE cart");
-            
+
             return RedirectToAction("Index");
         }
 

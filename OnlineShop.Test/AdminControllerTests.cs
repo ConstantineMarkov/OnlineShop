@@ -40,7 +40,7 @@ namespace OnlineShop.Test
             ctxt.Products.Add(new ProductModel
             {
                 Name = "asd",
-                CategoryId = "T-Shirt",
+                //CategoryId = "T-Shirt",
                 Count = 100,
                 Price = 100,
                 Description = "asd"
@@ -73,7 +73,7 @@ namespace OnlineShop.Test
             ProductModel pm = new ProductModel
             {
                 Name = "asd",
-                CategoryId = "T-Shirt",
+                //CategoryId = "T-Shirt",
                 Count = 100,
                 Price = 100,
                 Description = "asd"
@@ -97,7 +97,7 @@ namespace OnlineShop.Test
             ctxt.Products.Add(new ProductModel
             {
                 Name = "asd",
-                CategoryId = "T-Shirt",
+                //CategoryId = "T-Shirt",
                 Count = 100,
                 Price = 100,
                 Description = "asd"
@@ -122,7 +122,7 @@ namespace OnlineShop.Test
             ProductModel pm = new ProductModel
             {
                 Name = "asd",
-                CategoryId = "T-Shirt",
+                //CategoryId = "T-Shirt",
                 Count = 100,
                 Price = 100,
                 Description = "asd"
@@ -155,7 +155,7 @@ namespace OnlineShop.Test
             ctxt.Products.Add(new ProductModel
             {
                 Name = "asd",
-                CategoryId = "T-Shirt",
+                //CategoryId = "T-Shirt",
                 Count = 100,
                 Price = 100,
                 Description = "asd"
@@ -176,7 +176,7 @@ namespace OnlineShop.Test
             ctxt.Products.Add(new ProductModel
             {
                 Name = "asd",
-                CategoryId = "T-Shirt",
+                //CategoryId = "T-Shirt",
                 Count = 100,
                 Price = 100,
                 Description = "asd"

@@ -1,8 +1,7 @@
 ﻿@model OnlineShop.Models.ProductModel
+@inject OnlineShop.Data.OnlineShopContext context
 
-@{
-    ViewData["Title"] = "Delete";
-}
+@{ ViewData["Title"] = "Delete"; }
 
 <h1>Delete</h1>
 
@@ -18,10 +17,10 @@
             @Html.DisplayFor(model => model.Name)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CategoryId)
+            @Html.DisplayNameFor(model => model.Category)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CategoryId)
+            @context.CategoryModel.Where(x => x.Id == Model.CategoryId).FirstOrDefault().Name
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Price)
@@ -42,7 +41,7 @@
             @Html.DisplayFor(model => model.Description)
         </dd>
     </dl>
-    
+
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maga\\Desktop\\GitRepos\\OnlineShop\\OnlineShopNew\\OnlineShop.csproj": {}
+    "D:\\Downloads\\Git\\OnlineShop\\OnlineShopNew\\OnlineShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maga\\Desktop\\GitRepos\\OnlineShop\\OnlineShopNew\\OnlineShop.csproj": {
+    "D:\\Downloads\\Git\\OnlineShop\\OnlineShopNew\\OnlineShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maga\\Desktop\\GitRepos\\OnlineShop\\OnlineShopNew\\OnlineShop.csproj",
+        "projectUniqueName": "D:\\Downloads\\Git\\OnlineShop\\OnlineShopNew\\OnlineShop.csproj",
         "projectName": "OnlineShop",
-        "projectPath": "C:\\Users\\maga\\Desktop\\GitRepos\\OnlineShop\\OnlineShopNew\\OnlineShop.csproj",
-        "packagesPath": "C:\\Users\\maga\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maga\\Desktop\\GitRepos\\OnlineShop\\OnlineShopNew\\obj\\",
+        "projectPath": "D:\\Downloads\\Git\\OnlineShop\\OnlineShopNew\\OnlineShop.csproj",
+        "packagesPath": "C:\\Users\\Martin\\.nuget\\packages\\",
+        "outputPath": "D:\\Downloads\\Git\\OnlineShop\\OnlineShopNew\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\maga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Martin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,7 +62,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.1.5, )"
+              "version": "[5.0.2, )"
             },
             "MySql.EntityFrameworkCore": {
               "target": "Package",
@@ -87,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }

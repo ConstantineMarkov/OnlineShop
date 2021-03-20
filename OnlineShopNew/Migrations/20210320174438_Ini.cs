@@ -4,7 +4,7 @@ using MySql.EntityFrameworkCore.Metadata;
 
 namespace OnlineShop.Migrations
 {
-    public partial class Init : Migration
+    public partial class Ini : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,7 +12,7 @@ namespace OnlineShop.Migrations
                 name: "AspNetRoles",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "varchar(100)", nullable: false),
+                    Id = table.Column<string>(type: "varchar(256)", nullable: false),
                     Name = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
                     NormalizedName = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
                     ConcurrencyStamp = table.Column<string>(type: "text", nullable: true)
@@ -26,7 +26,7 @@ namespace OnlineShop.Migrations
                 name: "AspNetUsers",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "varchar(100)", nullable: false),
+                    Id = table.Column<string>(type: "varchar(256)", nullable: false),
                     UserName = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
@@ -61,29 +61,12 @@ namespace OnlineShop.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Products",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    CategoryId = table.Column<string>(type: "text", nullable: false),
-                    Name = table.Column<string>(type: "text", nullable: false),
-                    Price = table.Column<decimal>(type: "decimal(5, 2)", nullable: false),
-                    Count = table.Column<int>(type: "int", nullable: false),
-                    Description = table.Column<string>(type: "text", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Products", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    RoleId = table.Column<string>(type: "varchar(767)", nullable: false),
+                    RoleId = table.Column<string>(type: "varchar(256)", nullable: false),
                     ClaimType = table.Column<string>(type: "text", nullable: true),
                     ClaimValue = table.Column<string>(type: "text", nullable: true)
                 },
@@ -104,7 +87,7 @@ namespace OnlineShop.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    UserId = table.Column<string>(type: "varchar(100)", nullable: false),
+                    UserId = table.Column<string>(type: "varchar(256)", nullable: false),
                     ClaimType = table.Column<string>(type: "text", nullable: true),
                     ClaimValue = table.Column<string>(type: "text", nullable: true)
                 },
@@ -123,10 +106,10 @@ namespace OnlineShop.Migrations
                 name: "AspNetUserLogins",
                 columns: table => new
                 {
-                    LoginProvider = table.Column<string>(type: "varchar(100)", nullable: false),
-                    ProviderKey = table.Column<string>(type: "varchar(100)", nullable: false),
+                    LoginProvider = table.Column<string>(type: "varchar(256)", nullable: false),
+                    ProviderKey = table.Column<string>(type: "varchar(256)", nullable: false),
                     ProviderDisplayName = table.Column<string>(type: "text", nullable: true),
-                    UserId = table.Column<string>(type: "varchar(100)", nullable: false)
+                    UserId = table.Column<string>(type: "varchar(256)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -143,8 +126,8 @@ namespace OnlineShop.Migrations
                 name: "AspNetUserRoles",
                 columns: table => new
                 {
-                    UserId = table.Column<string>(type: "varchar(100)", nullable: false),
-                    RoleId = table.Column<string>(type: "varchar(100)", nullable: false)
+                    UserId = table.Column<string>(type: "varchar(256)", nullable: false),
+                    RoleId = table.Column<string>(type: "varchar(256)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -167,9 +150,9 @@ namespace OnlineShop.Migrations
                 name: "AspNetUserTokens",
                 columns: table => new
                 {
-                    UserId = table.Column<string>(type: "varchar(100)", nullable: false),
-                    LoginProvider = table.Column<string>(type: "varchar(100)", nullable: false),
-                    Name = table.Column<string>(type: "varchar(100)", nullable: false),
+                    UserId = table.Column<string>(type: "varchar(256)", nullable: false),
+                    LoginProvider = table.Column<string>(type: "varchar(256)", nullable: false),
+                    Name = table.Column<string>(type: "varchar(256)", nullable: false),
                     Value = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
@@ -184,12 +167,35 @@ namespace OnlineShop.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Products",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
+                    CategoryId = table.Column<int>(type: "int", nullable: false),
+                    Name = table.Column<string>(type: "text", nullable: false),
+                    Price = table.Column<decimal>(type: "decimal(5, 2)", nullable: false),
+                    Count = table.Column<int>(type: "int", nullable: false),
+                    Description = table.Column<string>(type: "text", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Products", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Products_Categories_CategoryId",
+                        column: x => x.CategoryId,
+                        principalTable: "Categories",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Cart",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    UserId = table.Column<string>(type: "varchar(100)", nullable: false),
+                    UserId = table.Column<string>(type: "varchar(256)", nullable: false),
                     ProductId = table.Column<int>(type: "int", nullable: false),
                     Count = table.Column<int>(type: "int", nullable: false)
                 },
@@ -237,7 +243,7 @@ namespace OnlineShop.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    FKUserId = table.Column<string>(type: "varchar(100)", nullable: false),
+                    FKUserId = table.Column<string>(type: "varchar(256)", nullable: false),
                     FKOrdersId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -318,8 +324,13 @@ namespace OnlineShop.Migrations
                 name: "IX_Orders_ProductId",
                 table: "Orders",
                 column: "ProductId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Products_CategoryId",
+                table: "Products",
+                column: "CategoryId");
         }
-         
+
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
@@ -344,9 +355,6 @@ namespace OnlineShop.Migrations
                 name: "Cart");
 
             migrationBuilder.DropTable(
-                name: "Categories");
-
-            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
@@ -357,6 +365,9 @@ namespace OnlineShop.Migrations
 
             migrationBuilder.DropTable(
                 name: "Products");
+
+            migrationBuilder.DropTable(
+                name: "Categories");
         }
     }
 }

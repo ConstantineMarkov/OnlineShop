@@ -311,9 +311,8 @@ namespace OnlineShop.Migrations
                         .HasColumnType("int")
                         .HasColumnName("Id");
 
-                    b.Property<string>("CategoryId")
-                        .IsRequired()
-                        .HasColumnType("text")
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int")
                         .HasColumnName("CategoryId");
 
                     b.Property<int>("Count")
@@ -334,6 +333,8 @@ namespace OnlineShop.Migrations
                         .HasColumnName("Price");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
                 });
@@ -436,6 +437,17 @@ namespace OnlineShop.Migrations
                         .IsRequired();
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("OnlineShop.Models.ProductModel", b =>
+                {
+                    b.HasOne("OnlineShop.Models.CategoryModel", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 #pragma warning restore 612, 618
         }

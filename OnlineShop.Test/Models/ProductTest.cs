@@ -15,7 +15,7 @@ namespace OnlineShop.Tests
         {
             ProductModel pm = new ProductModel
             {
-                CategoryId = null,
+                //CategoryId = null,
                 Count = 100,
                 Description = "durabura",
                 Name = "nishto",
