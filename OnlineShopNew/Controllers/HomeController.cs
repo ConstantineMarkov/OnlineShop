@@ -38,7 +38,7 @@ namespace OnlineShop.Controllers
 
         public List<CartModel> CartList()
         {
-            var CartList = db.CartModel.ToList();
+            var CartList = db.CartModel.Where(x => x.UserId == userManager.GetUserId(this.User)).ToList();
             return CartList;
         }
 
@@ -85,12 +85,12 @@ namespace OnlineShop.Controllers
         [HttpPost]
         public async Task<IActionResult> Buy(int? id, CartModel cart)
         {
-            if (CartList() != null && CartList().Any())
+            if (db.CartModel != null && db.CartModel.Any())
             {
                 cart.Id = db.CartModel.Select(x => x.Id).Max() + 1;
             }
             else cart.Id = 1;
-            
+
             var productModel = await db.Products.FirstOrDefaultAsync(m => m.Id == id);
 
             if (productModel.Count < cart.Count)
@@ -106,7 +106,6 @@ namespace OnlineShop.Controllers
 
             cart.ProductId = productModel.Id;
             //cart.Product = db.Products.Where(x => x.Id == cart.ProductId).FirstOrDefault();
-            var b = CartList();
 
             db.Add(cart);
             await db.SaveChangesAsync();
@@ -131,6 +130,10 @@ namespace OnlineShop.Controllers
             db.Database.ExecuteSqlRaw("TRUNCATE TABLE cart");
 
             return RedirectToAction("Index");
+        }
+        public IActionResult Privacy()
+        {
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
