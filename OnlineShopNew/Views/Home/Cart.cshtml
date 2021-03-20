@@ -1,0 +1,42 @@
+﻿@model List<CartModel>;
+@using OnlineShop.Data;
+@inject OnlineShopContext context  
+@{ViewData["Title"] = "Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<h1>Cart</h1>
+<div>
+    <hr />
+    @foreach (var item in Model)
+    {
+        <div>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @context.Products.Where(x => x.Id == item.ProductId).FirstOrDefault().Name
+            </dt>
+            <dd class="col-sm-2">
+                @item.Count
+            </dd>
+            <dt class="col-sm-2">
+                @context.Products.Where(x => x.Id == item.ProductId).FirstOrDefault().Price€
+            </dt>
+            <dt class="col-sm-2">
+                @context.Products.Where(x => x.Id == item.ProductId).FirstOrDefault().CategoryId
+            </dt>
+            <dt class="col-sm-2">
+                @context.Products.Where(x => x.Id == item.ProductId).FirstOrDefault().Description
+            </dt>
+            <div class="float-left">
+                <a asp-controller="Home" asp-action="ProductView" asp-route-id="@item.ProductId">View Item</a>
+            </div>
+        </dl>
+        </div>}
+            <div class="card-body">
+                <a asp-controller="Home" asp-action="Order">Order</a>
+            </div>
+
+
+
+
+

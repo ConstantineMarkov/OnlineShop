@@ -1,0 +1,9 @@
+D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\OnlineShopNew.csprojAssemblyReference.cache
+D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\OnlineShopNew.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\OnlineShopNew.AssemblyInfoInputs.cache
+D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\OnlineShopNew.AssemblyInfo.cs
+D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\OnlineShopNew.csproj.CoreCompileInputs.cache
+D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\OnlineShopNew.MvcApplicationPartsAssemblyInfo.cs
+D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\OnlineShopNew.MvcApplicationPartsAssemblyInfo.cache
+D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\OnlineShopNew.RazorAssemblyInfo.cache
+D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\OnlineShopNew.RazorAssemblyInfo.cs
