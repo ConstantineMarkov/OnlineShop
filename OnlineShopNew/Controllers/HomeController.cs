@@ -17,19 +17,20 @@ namespace OnlineShop.Controllers
     using OnlineShop.Data;
     using OnlineShop.Models;
 
-    public class HomeController : Controller
+    public class HomeController : Controller, IHomeController
     {
         private readonly ILogger<HomeController> _logger;
-        private OnlineShopContext db = new OnlineShopContext();
+        private OnlineShopContext db;
         private UserManager<OnlineShopUser> userManager;
         public const int maxItemDisplay = 9;
 
-        public HomeController(ILogger<HomeController> logger, UserManager<OnlineShopUser> userManager)
+        public HomeController(ILogger<HomeController> logger, UserManager<OnlineShopUser> userManager, OnlineShopContext context)
         {
             this.userManager = userManager;
             _logger = logger;
+            db = context;
         }
-        
+
         public List<CartModel> CartList()
         {
             var CartList = db.CartModel.ToList();
@@ -46,7 +47,7 @@ namespace OnlineShop.Controllers
             int pageSize = 9;
             return View(await PaginatedList<ProductModel>.CreateAsync(products, pageNumber ?? 1, pageSize));
         }
-        
+
         public async Task<IActionResult> Cart()
         {
             return View(CartList());
@@ -88,7 +89,7 @@ namespace OnlineShop.Controllers
             }
             else cart.Id = 1;
             var productModel = await db.Products.FirstOrDefaultAsync(m => m.Id == id);
-            if(productModel.Count < cart.Count)
+            if (productModel.Count < cart.Count)
             {
                 throw new InvalidOperationException("Not enough products.");
             }
@@ -112,7 +113,7 @@ namespace OnlineShop.Controllers
         public async Task<IActionResult> Order()
         {
             var cartList = CartList();
-            foreach(var item in cartList)
+            foreach (var item in cartList)
             {
                 OrderModel order = new OrderModel();
                 order.ProductId = item.ProductId;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OnlineShop.Models
 {
-    public class RegisterViewModel
+    public class RegisterViewModel : IRegisterViewModel
     {
         [Required]
         [EmailAddress]

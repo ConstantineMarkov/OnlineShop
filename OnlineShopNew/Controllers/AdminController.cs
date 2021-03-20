@@ -12,7 +12,7 @@ namespace OnlineShop.Controllers
     using OnlineShop.Models;
     using OnlineShop.Data;
 
-    public class AdminController : Controller
+    public class AdminController : Controller, IAdminController
     {
         private readonly OnlineShopContext _context;
 
@@ -37,6 +37,7 @@ namespace OnlineShop.Controllers
 
             var productModel = await _context.Products
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (productModel == null)
             {
                 return NotFound();
@@ -51,15 +52,6 @@ namespace OnlineShop.Controllers
             return View();
         }
 
-        // POST: Product/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        /// <summary>
-        ///
-        /// </summary>
-        /// <param name="productModel"></param>
-        /// <param name="image"></param>
-        /// <returns>A <see cref="Task{TResult}"/> representing the result of the asynchronous operation.</returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,CategoryId,Name,Price,Count,Description")] ProductModel productModel)
@@ -83,6 +75,7 @@ namespace OnlineShop.Controllers
             }
 
             var productModel = await _context.Products.FindAsync(id);
+            
             if (productModel == null)
             {
                 return NotFound();
@@ -92,8 +85,6 @@ namespace OnlineShop.Controllers
         }
 
         // POST: Product/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,CategoryId,Name,Price,Count,Description")] ProductModel productModel)

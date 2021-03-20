@@ -14,12 +14,12 @@ namespace OnlineShop
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using OnlineShop.Data;
+    using MySql.EntityFrameworkCore;
 
     /// <summary>
     /// asdasda.
     /// </summary>
     /// 
-   
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -34,13 +34,11 @@ namespace OnlineShop
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<OnlineShopContext>(x => x.UseMySql(
-                "Server=127.0.0.1;Port=3306;Database=OnlineShop;Uid=root;Pwd=root;",
-                new MySqlServerVersion(new Version(8, 0, 22))));
+            services.AddDbContext<OnlineShopContext>(x => x.UseMySQL(
+                "Server=127.0.0.1;Port=3306;Database=OnlineShop;Uid=root;Pwd=root;"));
+
 
             services.AddIdentity<OnlineShopUser, IdentityRole>().AddEntityFrameworkStores<OnlineShopContext>();
-
-            services.AddHttpContextAccessor();
 
             IServiceCollection serviceCollections = services.Configure<IdentityOptions>(options =>
             {
