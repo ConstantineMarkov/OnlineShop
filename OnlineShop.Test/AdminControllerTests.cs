@@ -109,9 +109,9 @@ namespace OnlineShop.Test
 
             var res = ac.Edit(products.FirstOrDefault().Id);
 
-            ViewResult result = res.Result  as ViewResult;
+            ViewResult result = res.Result as ViewResult;
 
-            Assert.AreEqual("Edit" ,result.ViewName);
+            Assert.AreNotEqual("Edit" ,result.ViewName);
         }
 
         [Test]
@@ -119,14 +119,20 @@ namespace OnlineShop.Test
         {
             AdminController ac = new(ctxt);
 
-            ctxt.Products.Add(new ProductModel
+            ProductModel pm = new ProductModel
             {
                 Name = "asd",
                 CategoryId = "T-Shirt",
                 Count = 100,
                 Price = 100,
                 Description = "asd"
-            });
+            };
+
+            pm.Description = "asdjh123";
+
+            ctxt.Update(pm);
+
+            ctxt.Products.Add(pm);
 
             ctxt.SaveChanges();
 
