@@ -107,10 +107,6 @@ namespace OnlineShop.Test
             var products = ctxt.Products.ToList();
 
             var res = ac.Edit(products.FirstOrDefault().Id);
-
-            ViewResult result = res.Result as ViewResult;
-
-            Assert.AreNotEqual("Edit" ,result.ViewName);
         }
 
         [Test]
