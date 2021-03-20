@@ -839,7 +839,6 @@ C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\bin\Debug\net5.0\Zstanda
 C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\bin\Debug\net5.0\MySql.EntityFrameworkCore.dll
 C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\bin\Debug\net5.0\Renci.SshNet.dll
 C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\bin\Debug\net5.0\SshNet.Security.Cryptography.dll
-C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\bin\Debug\net5.0\NuGet.Frameworks.dll
 D:\Downloads\Git\OnlineShop\OnlineShopNew\bin\Debug\net5.0\BouncyCastle.Crypto.dll
 D:\Downloads\Git\OnlineShop\OnlineShopNew\bin\Debug\net5.0\Google.Protobuf.dll
 D:\Downloads\Git\OnlineShop\OnlineShopNew\bin\Debug\net5.0\K4os.Compression.LZ4.dll
@@ -859,3 +858,11 @@ D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\Razor\Views\Category\
 D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\Razor\Views\Category\Details.cshtml.g.cs
 D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\Razor\Views\Category\Edit.cshtml.g.cs
 D:\Downloads\Git\OnlineShop\OnlineShopNew\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
+C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\obj\Debug\net5.0\Razor\Views\Category\Create.cshtml.g.cs
+C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\obj\Debug\net5.0\Razor\Views\Category\Delete.cshtml.g.cs
+C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\obj\Debug\net5.0\Razor\Views\Category\Details.cshtml.g.cs
+C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\obj\Debug\net5.0\Razor\Views\Category\Edit.cshtml.g.cs
+C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs

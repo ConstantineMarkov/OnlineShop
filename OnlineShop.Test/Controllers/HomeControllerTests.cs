@@ -1,20 +1,20 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using Moq;
-using NUnit.Framework;
-using OnlineShop.Controllers;
-using OnlineShop.Data;
-using OnlineShop.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OnlineShop.Test
+﻿namespace OnlineShop.Test
 {
+    using Microsoft.AspNetCore.Identity;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.EntityFrameworkCore;
+    using Microsoft.Extensions.Logging;
+    using Moq;
+    using NUnit.Framework;
+    using OnlineShop.Controllers;
+    using OnlineShop.Data;
+    using OnlineShop.Models;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    
     class HomeControllerTests
     {
         private static Mock<IUserStore<OnlineShopUser>> userStore;
@@ -45,14 +45,6 @@ namespace OnlineShop.Test
         }
 
         [Test]
-        public void CartList()
-        {
-            var res = hc.CartList();
-
-            Assert.IsNotNull(res);
-        }
-
-        [Test]
         public void Index()
         {
             var res = hc.Index(1);
@@ -79,6 +71,7 @@ namespace OnlineShop.Test
         [Test]
         public void ProductView()
         {
+            hc.ProductView(null);
             var res = hc.ProductView(1);
 
             Assert.NotNull(res.Id);
@@ -99,6 +92,10 @@ namespace OnlineShop.Test
         {
             Mock<CartModel> cm = new Mock<CartModel>();
 
+            context.Add(cm.Object);
+            context.SaveChanges();
+
+            hc.Buy(1, null);
             var res = hc.Buy(1, cm.Object);
 
             int m = cm.Object.Count;
@@ -112,6 +109,12 @@ namespace OnlineShop.Test
         {
             var res = hc.Order();
             Assert.NotNull(res);
+        }
+
+        [Test]
+        public void Privacy()
+        {
+            Assert.NotNull(hc.Privacy());
         }
     }
 }

@@ -13,13 +13,16 @@ using System.Linq;
 namespace OnlineShop.Test
 {
     [TestFixture]
-    public class Tests
+    public class AdminControllerTests
     {
         private OnlineShopContext ctxt;
+        private AdminController ac;
 
         [SetUp]
         public void Setup()
         {
+            ac = new(ctxt);
+            
             var opt = new DbContextOptionsBuilder<OnlineShopContext>()
                 .UseInMemoryDatabase(Guid.NewGuid().ToString()).Options;
 
@@ -35,12 +38,10 @@ namespace OnlineShop.Test
         [Test]
         public void Index()
         {
-            AdminController ac = new(ctxt);
-
             ctxt.Products.Add(new ProductModel
             {
                 Name = "asd",
-                //CategoryId = "T-Shirt",
+                CategoryId = 1,
                 Count = 100,
                 Price = 100,
                 Description = "asd"
@@ -58,9 +59,8 @@ namespace OnlineShop.Test
         [Test]
         public void Detalis()
         {
-            AdminController ac = new(ctxt);
-
             var res = ac.Details(1) as IActionResult;
+            ac.Details(null);
 
             Assert.IsNull(res);
         }
@@ -68,12 +68,12 @@ namespace OnlineShop.Test
         [Test]
         public void Create()
         {
-            AdminController ac = new(ctxt);
+            ac.Create();
 
             ProductModel pm = new ProductModel
             {
                 Name = "asd",
-                //CategoryId = "T-Shirt",
+                CategoryId = 1,
                 Count = 100,
                 Price = 100,
                 Description = "asd"
@@ -91,13 +91,12 @@ namespace OnlineShop.Test
         [Test]
         public void Edit()
         {
-            AdminController ac = new(ctxt);
-
+            ac.Edit(null);
 
             ctxt.Products.Add(new ProductModel
             {
                 Name = "asd",
-                //CategoryId = "T-Shirt",
+                CategoryId = 1,
                 Count = 100,
                 Price = 100,
                 Description = "asd"
@@ -117,20 +116,20 @@ namespace OnlineShop.Test
         [Test]
         public void EditPost()
         {
-            AdminController ac = new(ctxt);
-
             ProductModel pm = new ProductModel
             {
                 Name = "asd",
-                //CategoryId = "T-Shirt",
+                CategoryId = 1,
                 Count = 100,
                 Price = 100,
                 Description = "asd"
             };
 
+            Mock<ProductModel> pmock = new();
+
+            ac.Edit(1, pmock.Object);
 
             ctxt.Products.Add(pm);
-
             ctxt.SaveChanges();
 
             ProductModel prod = ctxt.Products.FirstOrDefaultAsync().Result;
@@ -142,7 +141,6 @@ namespace OnlineShop.Test
             var edit2 = ac.Edit(ctxt.Products.FirstOrDefaultAsync().Id, prod);
 
             prod.Name = "poredniq exception";
-
 
             ctxt.Update(prod);
             ctxt.Update(pm);
@@ -156,12 +154,12 @@ namespace OnlineShop.Test
         [Test]
         public void Delete()
         {
-            AdminController ac = new(ctxt);
+            ac.Delete(null);
 
             ctxt.Products.Add(new ProductModel
             {
                 Name = "asd",
-                //CategoryId = "T-Shirt",
+                CategoryId = 1,
                 Count = 100,
                 Price = 100,
                 Description = "asd"
@@ -177,12 +175,10 @@ namespace OnlineShop.Test
         [Test]
         public void DeleteConfirmed()
         {
-            AdminController ac = new(ctxt);
-
             ctxt.Products.Add(new ProductModel
             {
                 Name = "asd",
-                //CategoryId = "T-Shirt",
+                CategoryId = 1,
                 Count = 100,
                 Price = 100,
                 Description = "asd"

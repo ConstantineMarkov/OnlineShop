@@ -9,8 +9,8 @@ using OnlineShop.Data;
 namespace OnlineShop.Migrations
 {
     [DbContext(typeof(OnlineShopContext))]
-    [Migration("20210320174438_Ini")]
-    partial class Ini
+    [Migration("20210320201022_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

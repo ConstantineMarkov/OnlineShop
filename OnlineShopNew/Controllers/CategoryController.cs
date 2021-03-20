@@ -17,11 +17,12 @@ namespace OnlineShop.Controllers
         {
             _context = context;
         }
+
         public IActionResult Create()
         {
             return View();
         }
-        
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind(new[] { "Id,Name" })] CategoryModel categoryModel)
@@ -54,10 +55,16 @@ namespace OnlineShop.Controllers
 
             return View(categoryModel);
         }
+
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(int? id)
         {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
             var categoryModel = await _context.CategoryModel.FindAsync(id);
 
             _context.CategoryModel.Remove(categoryModel);
@@ -112,8 +119,10 @@ namespace OnlineShop.Controllers
                         throw;
                     }
                 }
+                
                 return RedirectToAction(nameof(Index));
             }
+            
             return View(categoryModel);
         }
 
@@ -133,6 +142,7 @@ namespace OnlineShop.Controllers
 
             return View(categoryModel);
         }
+
         public async Task<IActionResult> Index()
         {
             return View(await _context.CategoryModel.ToListAsync());

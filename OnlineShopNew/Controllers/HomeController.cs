@@ -39,6 +39,7 @@ namespace OnlineShop.Controllers
         public List<CartModel> CartList()
         {
             var CartList = db.CartModel.Where(x => x.UserId == userManager.GetUserId(this.User)).ToList();
+            
             return CartList;
         }
             
@@ -46,6 +47,7 @@ namespace OnlineShop.Controllers
         {
             var products = from s in db.Products select s;
             int pageSize = 9;
+            
             return View(await PaginatedList<ProductModel>.CreateAsync(products, pageNumber ?? 1, pageSize));
         }
 

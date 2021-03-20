@@ -15,7 +15,7 @@ namespace OnlineShop.Controllers
 
         Task<IActionResult> Delete(int? id);
 
-        Task<IActionResult> DeleteConfirmed(int id);
+        Task<IActionResult> DeleteConfirmed(int? id);
 
         Task<IActionResult> Details(int? id);
 
