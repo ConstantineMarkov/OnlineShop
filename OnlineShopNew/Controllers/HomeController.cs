@@ -85,12 +85,12 @@ namespace OnlineShop.Controllers
         [HttpPost]
         public async Task<IActionResult> Buy(int? id, CartModel cart)
         {
-            /*if (CartList() != null && CartList().Any())
+            if (CartList() != null && CartList().Any())
             {
                 cart.Id = db.CartModel.Select(x => x.Id).Max() + 1;
             }
             else cart.Id = 1;
-            */
+            
             var productModel = await db.Products.FirstOrDefaultAsync(m => m.Id == id);
 
             if (productModel.Count < cart.Count)
