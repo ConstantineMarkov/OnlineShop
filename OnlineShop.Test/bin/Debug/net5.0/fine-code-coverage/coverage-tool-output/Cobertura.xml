@@ -1,0 +1,1736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="0.16981132075471697" branch-rate="0.011235955056179775" lines-covered="90" lines-valid="530" branches-covered="3" branches-valid="267" complexity="350" version="0" timestamp="1616252599">
+  <sources>
+    <source>C:\Users\maga\</source>
+  </sources>
+  <packages>
+    <package name="OnlineShop" line-rate="0.11217948717948718" branch-rate="0.06" complexity="117">
+      <classes>
+        <class name="OnlineShop.Controllers.AccountController" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Controllers\AccountController.cs" line-rate="0" branch-rate="0" complexity="15">
+          <methods>
+            <method name="Index" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="0" branch="false" />
+                <line number="23" hits="0" branch="false" />
+                <line number="24" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Register" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Login" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="65" hits="0" branch="false" />
+                <line number="66" hits="0" branch="false" />
+                <line number="67" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Register" signature="()" line-rate="0" branch-rate="0" complexity="6">
+              <lines>
+                <line number="33" hits="0" branch="false" />
+                <line number="34" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="35" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
+                <line number="37" hits="0" branch="false" />
+                <line number="38" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+                <line number="40" hits="0" branch="false" />
+                <line number="42" hits="0" branch="false" />
+                <line number="44" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="45" hits="0" branch="false" />
+                <line number="46" hits="0" branch="false" />
+                <line number="48" hits="0" branch="false" />
+                <line number="51" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="52" hits="0" branch="false" />
+                <line number="53" hits="0" branch="false" />
+                <line number="54" hits="0" branch="false" />
+                <line number="56" hits="0" branch="false" />
+                <line number="57" hits="0" branch="false" />
+                <line number="59" hits="0" branch="false" />
+                <line number="60" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Login" signature="()" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="72" hits="0" branch="false" />
+                <line number="73" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="74" hits="0" branch="false" />
+                <line number="75" hits="0" branch="false" />
+                <line number="77" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="78" hits="0" branch="false" />
+                <line number="79" hits="0" branch="false" />
+                <line number="82" hits="0" branch="false" />
+                <line number="83" hits="0" branch="false" />
+                <line number="85" hits="0" branch="false" />
+                <line number="86" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Logout" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="89" hits="0" branch="false" />
+                <line number="90" hits="0" branch="false" />
+                <line number="92" hits="0" branch="false" />
+                <line number="93" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="33" hits="0" branch="false" />
+            <line number="34" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="35" hits="0" branch="false" />
+            <line number="36" hits="0" branch="false" />
+            <line number="37" hits="0" branch="false" />
+            <line number="38" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+            <line number="40" hits="0" branch="false" />
+            <line number="42" hits="0" branch="false" />
+            <line number="44" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="45" hits="0" branch="false" />
+            <line number="46" hits="0" branch="false" />
+            <line number="48" hits="0" branch="false" />
+            <line number="51" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="52" hits="0" branch="false" />
+            <line number="53" hits="0" branch="false" />
+            <line number="54" hits="0" branch="false" />
+            <line number="56" hits="0" branch="false" />
+            <line number="57" hits="0" branch="false" />
+            <line number="59" hits="0" branch="false" />
+            <line number="60" hits="0" branch="false" />
+            <line number="65" hits="0" branch="false" />
+            <line number="66" hits="0" branch="false" />
+            <line number="67" hits="0" branch="false" />
+            <line number="72" hits="0" branch="false" />
+            <line number="73" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="74" hits="0" branch="false" />
+            <line number="75" hits="0" branch="false" />
+            <line number="77" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="78" hits="0" branch="false" />
+            <line number="79" hits="0" branch="false" />
+            <line number="82" hits="0" branch="false" />
+            <line number="83" hits="0" branch="false" />
+            <line number="85" hits="0" branch="false" />
+            <line number="86" hits="0" branch="false" />
+            <line number="89" hits="0" branch="false" />
+            <line number="90" hits="0" branch="false" />
+            <line number="92" hits="0" branch="false" />
+            <line number="93" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="OnlineShop.Controllers.AdminController" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Controllers\AdminController.cs" line-rate="0.26582278481012656" branch-rate="0.15" complexity="25">
+          <methods>
+            <method name="Create" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="51" hits="1" branch="false" />
+                <line number="52" hits="1" branch="false" />
+                <line number="53" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="ProductModelExists" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="150" hits="0" branch="false" />
+                <line number="151" hits="0" branch="false" />
+                <line number="152" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="4" branch="false" />
+                <line number="20" hits="4" branch="false" />
+                <line number="21" hits="4" branch="false" />
+                <line number="22" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="Index" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="1" branch="false" />
+                <line number="27" hits="1" branch="false" />
+                <line number="28" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Details" signature="()" line-rate="0.45454545454545453" branch-rate="0.25" complexity="4">
+              <lines>
+                <line number="32" hits="1" branch="false" />
+                <line number="33" hits="1" branch="true" condition-coverage="50% (1/2)" />
+                <line number="34" hits="1" branch="false" />
+                <line number="35" hits="1" branch="false" />
+                <line number="38" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+                <line number="41" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="42" hits="0" branch="false" />
+                <line number="43" hits="0" branch="false" />
+                <line number="46" hits="0" branch="false" />
+                <line number="47" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Create" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="58" hits="0" branch="false" />
+                <line number="59" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="60" hits="0" branch="false" />
+                <line number="61" hits="0" branch="false" />
+                <line number="62" hits="0" branch="false" />
+                <line number="63" hits="0" branch="false" />
+                <line number="66" hits="0" branch="false" />
+                <line number="67" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Edit" signature="()" line-rate="0.6" branch-rate="0.5" complexity="4">
+              <lines>
+                <line number="71" hits="1" branch="false" />
+                <line number="72" hits="1" branch="true" condition-coverage="50% (1/2)" />
+                <line number="73" hits="0" branch="false" />
+                <line number="74" hits="0" branch="false" />
+                <line number="77" hits="1" branch="false" />
+                <line number="79" hits="1" branch="true" condition-coverage="50% (1/2)" />
+                <line number="80" hits="0" branch="false" />
+                <line number="81" hits="0" branch="false" />
+                <line number="84" hits="1" branch="false" />
+                <line number="85" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Edit" signature="()" line-rate="0" branch-rate="0" complexity="6">
+              <lines>
+                <line number="91" hits="0" branch="false" />
+                <line number="92" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="93" hits="0" branch="false" />
+                <line number="94" hits="0" branch="false" />
+                <line number="97" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="98" hits="0" branch="false" />
+                <line number="100" hits="0" branch="false" />
+                <line number="101" hits="0" branch="false" />
+                <line number="102" hits="0" branch="false" />
+                <line number="103" hits="0" branch="false" />
+                <line number="104" hits="0" branch="false" />
+                <line number="105" hits="0" branch="false" />
+                <line number="106" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="107" hits="0" branch="false" />
+                <line number="108" hits="0" branch="false" />
+                <line number="111" hits="0" branch="false" />
+                <line number="112" hits="0" branch="false" />
+                <line number="115" hits="0" branch="false" />
+                <line number="117" hits="0" branch="false" />
+                <line number="118" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Delete" signature="()" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="122" hits="0" branch="false" />
+                <line number="123" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="124" hits="0" branch="false" />
+                <line number="125" hits="0" branch="false" />
+                <line number="128" hits="0" branch="false" />
+                <line number="129" hits="0" branch="false" />
+                <line number="130" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="131" hits="0" branch="false" />
+                <line number="132" hits="0" branch="false" />
+                <line number="135" hits="0" branch="false" />
+                <line number="136" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="DeleteConfirmed" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="142" hits="0" branch="false" />
+                <line number="143" hits="0" branch="false" />
+                <line number="144" hits="0" branch="false" />
+                <line number="145" hits="0" branch="false" />
+                <line number="146" hits="0" branch="false" />
+                <line number="147" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="4" branch="false" />
+            <line number="20" hits="4" branch="false" />
+            <line number="21" hits="4" branch="false" />
+            <line number="22" hits="4" branch="false" />
+            <line number="26" hits="1" branch="false" />
+            <line number="27" hits="1" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="32" hits="1" branch="false" />
+            <line number="33" hits="1" branch="true" condition-coverage="50% (1/2)" />
+            <line number="34" hits="1" branch="false" />
+            <line number="35" hits="1" branch="false" />
+            <line number="38" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+            <line number="41" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="42" hits="0" branch="false" />
+            <line number="43" hits="0" branch="false" />
+            <line number="46" hits="0" branch="false" />
+            <line number="47" hits="1" branch="false" />
+            <line number="51" hits="1" branch="false" />
+            <line number="52" hits="1" branch="false" />
+            <line number="53" hits="1" branch="false" />
+            <line number="58" hits="0" branch="false" />
+            <line number="59" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="60" hits="0" branch="false" />
+            <line number="61" hits="0" branch="false" />
+            <line number="62" hits="0" branch="false" />
+            <line number="63" hits="0" branch="false" />
+            <line number="66" hits="0" branch="false" />
+            <line number="67" hits="0" branch="false" />
+            <line number="71" hits="1" branch="false" />
+            <line number="72" hits="1" branch="true" condition-coverage="50% (1/2)" />
+            <line number="73" hits="0" branch="false" />
+            <line number="74" hits="0" branch="false" />
+            <line number="77" hits="1" branch="false" />
+            <line number="79" hits="1" branch="true" condition-coverage="50% (1/2)" />
+            <line number="80" hits="0" branch="false" />
+            <line number="81" hits="0" branch="false" />
+            <line number="84" hits="1" branch="false" />
+            <line number="85" hits="1" branch="false" />
+            <line number="91" hits="0" branch="false" />
+            <line number="92" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="93" hits="0" branch="false" />
+            <line number="94" hits="0" branch="false" />
+            <line number="97" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="98" hits="0" branch="false" />
+            <line number="100" hits="0" branch="false" />
+            <line number="101" hits="0" branch="false" />
+            <line number="102" hits="0" branch="false" />
+            <line number="103" hits="0" branch="false" />
+            <line number="104" hits="0" branch="false" />
+            <line number="105" hits="0" branch="false" />
+            <line number="106" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="107" hits="0" branch="false" />
+            <line number="108" hits="0" branch="false" />
+            <line number="111" hits="0" branch="false" />
+            <line number="112" hits="0" branch="false" />
+            <line number="115" hits="0" branch="false" />
+            <line number="117" hits="0" branch="false" />
+            <line number="118" hits="0" branch="false" />
+            <line number="122" hits="0" branch="false" />
+            <line number="123" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="124" hits="0" branch="false" />
+            <line number="125" hits="0" branch="false" />
+            <line number="128" hits="0" branch="false" />
+            <line number="129" hits="0" branch="false" />
+            <line number="130" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="131" hits="0" branch="false" />
+            <line number="132" hits="0" branch="false" />
+            <line number="135" hits="0" branch="false" />
+            <line number="136" hits="0" branch="false" />
+            <line number="142" hits="0" branch="false" />
+            <line number="143" hits="0" branch="false" />
+            <line number="144" hits="0" branch="false" />
+            <line number="145" hits="0" branch="false" />
+            <line number="146" hits="0" branch="false" />
+            <line number="147" hits="0" branch="false" />
+            <line number="150" hits="0" branch="false" />
+            <line number="151" hits="0" branch="false" />
+            <line number="152" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="OnlineShop.Controllers.HomeController" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Controllers\HomeController.cs" line-rate="0" branch-rate="0" complexity="25">
+          <methods>
+            <method name="CartList" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="35" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
+                <line number="37" hits="0" branch="false" />
+                <line number="38" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_CurrentPageIndex" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="40" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_PageCount" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="42" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="AboutUs" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="56" hits="0" branch="false" />
+                <line number="57" hits="0" branch="false" />
+                <line number="58" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Buy" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="79" hits="0" branch="false" />
+                <line number="80" hits="0" branch="false" />
+                <line number="81" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Error" signature="()" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="130" hits="0" branch="false" />
+                <line number="131" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="132" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+                <line number="31" hits="0" branch="false" />
+                <line number="32" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Index" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="45" hits="0" branch="false" />
+                <line number="46" hits="0" branch="false" />
+                <line number="47" hits="0" branch="false" />
+                <line number="48" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="49" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Cart" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="52" hits="0" branch="false" />
+                <line number="53" hits="0" branch="false" />
+                <line number="54" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="ProductView" signature="()" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="62" hits="0" branch="false" />
+                <line number="63" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="64" hits="0" branch="false" />
+                <line number="65" hits="0" branch="false" />
+                <line number="67" hits="0" branch="false" />
+                <line number="68" hits="0" branch="false" />
+                <line number="70" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="71" hits="0" branch="false" />
+                <line number="72" hits="0" branch="false" />
+                <line number="75" hits="0" branch="false" />
+                <line number="76" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Buy" signature="()" line-rate="0" branch-rate="0" complexity="6">
+              <lines>
+                <line number="85" hits="0" branch="false" />
+                <line number="86" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="87" hits="0" branch="false" />
+                <line number="88" hits="0" branch="false" />
+                <line number="89" hits="0" branch="false" />
+                <line number="90" hits="0" branch="false" />
+                <line number="91" hits="0" branch="false" />
+                <line number="92" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="93" hits="0" branch="false" />
+                <line number="94" hits="0" branch="false" />
+                <line number="96" hits="0" branch="false" />
+                <line number="97" hits="0" branch="false" />
+                <line number="98" hits="0" branch="false" />
+                <line number="100" hits="0" branch="false" />
+                <line number="102" hits="0" branch="false" />
+                <line number="104" hits="0" branch="false" />
+                <line number="105" hits="0" branch="false" />
+                <line number="106" hits="0" branch="false" />
+                <line number="107" hits="0" branch="false" />
+                <line number="111" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Order" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="114" hits="0" branch="false" />
+                <line number="115" hits="0" branch="false" />
+                <line number="116" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="117" hits="0" branch="false" />
+                <line number="118" hits="0" branch="false" />
+                <line number="119" hits="0" branch="false" />
+                <line number="120" hits="0" branch="false" />
+                <line number="121" hits="0" branch="false" />
+                <line number="122" hits="0" branch="false" />
+                <line number="123" hits="0" branch="false" />
+                <line number="124" hits="0" branch="false" />
+                <line number="125" hits="0" branch="false" />
+                <line number="126" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="36" hits="0" branch="false" />
+            <line number="37" hits="0" branch="false" />
+            <line number="38" hits="0" branch="false" />
+            <line number="40" hits="0" branch="false" />
+            <line number="42" hits="0" branch="false" />
+            <line number="45" hits="0" branch="false" />
+            <line number="46" hits="0" branch="false" />
+            <line number="47" hits="0" branch="false" />
+            <line number="48" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="49" hits="0" branch="false" />
+            <line number="52" hits="0" branch="false" />
+            <line number="53" hits="0" branch="false" />
+            <line number="54" hits="0" branch="false" />
+            <line number="56" hits="0" branch="false" />
+            <line number="57" hits="0" branch="false" />
+            <line number="58" hits="0" branch="false" />
+            <line number="62" hits="0" branch="false" />
+            <line number="63" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="64" hits="0" branch="false" />
+            <line number="65" hits="0" branch="false" />
+            <line number="67" hits="0" branch="false" />
+            <line number="68" hits="0" branch="false" />
+            <line number="70" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="71" hits="0" branch="false" />
+            <line number="72" hits="0" branch="false" />
+            <line number="75" hits="0" branch="false" />
+            <line number="76" hits="0" branch="false" />
+            <line number="79" hits="0" branch="false" />
+            <line number="80" hits="0" branch="false" />
+            <line number="81" hits="0" branch="false" />
+            <line number="85" hits="0" branch="false" />
+            <line number="86" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="87" hits="0" branch="false" />
+            <line number="88" hits="0" branch="false" />
+            <line number="89" hits="0" branch="false" />
+            <line number="90" hits="0" branch="false" />
+            <line number="91" hits="0" branch="false" />
+            <line number="92" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="93" hits="0" branch="false" />
+            <line number="94" hits="0" branch="false" />
+            <line number="96" hits="0" branch="false" />
+            <line number="97" hits="0" branch="false" />
+            <line number="98" hits="0" branch="false" />
+            <line number="100" hits="0" branch="false" />
+            <line number="102" hits="0" branch="false" />
+            <line number="104" hits="0" branch="false" />
+            <line number="105" hits="0" branch="false" />
+            <line number="106" hits="0" branch="false" />
+            <line number="107" hits="0" branch="false" />
+            <line number="111" hits="0" branch="false" />
+            <line number="114" hits="0" branch="false" />
+            <line number="115" hits="0" branch="false" />
+            <line number="116" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="117" hits="0" branch="false" />
+            <line number="118" hits="0" branch="false" />
+            <line number="119" hits="0" branch="false" />
+            <line number="120" hits="0" branch="false" />
+            <line number="121" hits="0" branch="false" />
+            <line number="122" hits="0" branch="false" />
+            <line number="123" hits="0" branch="false" />
+            <line number="124" hits="0" branch="false" />
+            <line number="125" hits="0" branch="false" />
+            <line number="126" hits="0" branch="false" />
+            <line number="130" hits="0" branch="false" />
+            <line number="131" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="132" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="OnlineShop.Data.OnlineShopContext" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Data\OnlineShopContext.cs" line-rate="1" branch-rate="1" complexity="7">
+          <methods>
+            <method name="get_Products" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="10" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Orders" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="get_BuyingHistory" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="get_CategoryModel" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="28" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="get_OnlineShopUsers" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="30" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="get_CartModel" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="32" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="4" branch="false" />
+                <line number="17" hits="4" branch="false" />
+                <line number="18" hits="4" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="16" hits="4" branch="false" />
+            <line number="17" hits="4" branch="false" />
+            <line number="18" hits="4" branch="false" />
+            <line number="20" hits="10" branch="false" />
+            <line number="24" hits="4" branch="false" />
+            <line number="26" hits="4" branch="false" />
+            <line number="28" hits="4" branch="false" />
+            <line number="30" hits="4" branch="false" />
+            <line number="32" hits="4" branch="false" />
+          </lines>
+        </class>
+        <class name="OnlineShop.Models.BuyingHistory" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Models\BuyingHistory.cs" line-rate="0" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_AccountId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_OrderId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="29" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="OnlineShop.Models.CartModel" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Models\CartModel.cs" line-rate="0" branch-rate="1" complexity="7">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_UserId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_User" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="28" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_ProductId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="33" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Product" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="35" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Count" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="39" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="33" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="OnlineShop.Models.CategoryModel" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Models\CategoryModel.cs" line-rate="0" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Name" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="21" hits="0" branch="false" />
+            <line number="25" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="OnlineShop.Models.ErrorViewModel" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Models\ErrorViewModel.cs" line-rate="0" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_RequestId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_ShowRequestId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="0" branch="false" />
+            <line number="9" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="OnlineShop.Models.LoginViewModel" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Models\LoginViewModel.cs" line-rate="0" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Email" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Password" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_RememberMe" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="OnlineShop.Models.OrderModel" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Models\OrderModel.cs" line-rate="0" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_ProductId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="30" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Product" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="31" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Count" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="35" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Date" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="39" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="25" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="OnlineShop.Models.PaginatedList`1" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Models\PaginatedList.cs" line-rate="0" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_PageIndex" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_TotalPages" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_HasPreviousPage" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="30" hits="0" branch="false" />
+                <line number="31" hits="0" branch="false" />
+                <line number="32" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_HasNextPage" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="38" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+                <line number="40" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+                <line number="24" hits="0" branch="false" />
+                <line number="25" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="CreateAsync" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="44" hits="0" branch="false" />
+                <line number="45" hits="0" branch="false" />
+                <line number="46" hits="0" branch="false" />
+                <line number="47" hits="0" branch="false" />
+                <line number="48" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="25" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
+            <line number="38" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+            <line number="40" hits="0" branch="false" />
+            <line number="44" hits="0" branch="false" />
+            <line number="45" hits="0" branch="false" />
+            <line number="46" hits="0" branch="false" />
+            <line number="47" hits="0" branch="false" />
+            <line number="48" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="OnlineShop.Models.ProductModel" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Models\ProductModel.cs" line-rate="0.8333333333333334" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_CategoryId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="30" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Price" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="34" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Count" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="38" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Description" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="41" hits="3" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="22" hits="0" branch="false" />
+            <line number="26" hits="3" branch="false" />
+            <line number="30" hits="3" branch="false" />
+            <line number="34" hits="3" branch="false" />
+            <line number="38" hits="3" branch="false" />
+            <line number="41" hits="3" branch="false" />
+          </lines>
+        </class>
+        <class name="OnlineShop.Models.RegisterViewModel" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Models\RegisterViewModel.cs" line-rate="0" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Email" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Password" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_ConfirmPassword" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="OnlineShop.Program" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Program.cs" line-rate="0" branch-rate="1" complexity="2">
+          <methods>
+            <method name="Main" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="CreateHostBuilder" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+                <line number="23" hits="0" branch="false" />
+                <line number="24" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="OnlineShop.Startup" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Startup.cs" line-rate="0" branch-rate="0" complexity="5">
+          <methods>
+            <method name="get_Configuration" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="30" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="ConfigureServices" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="34" hits="0" branch="false" />
+                <line number="35" hits="0" branch="false" />
+                <line number="37" hits="0" branch="false" />
+                <line number="38" hits="0" branch="false" />
+                <line number="41" hits="0" branch="false" />
+                <line number="43" hits="0" branch="false" />
+                <line number="44" hits="0" branch="false" />
+                <line number="45" hits="0" branch="false" />
+                <line number="46" hits="0" branch="false" />
+                <line number="47" hits="0" branch="false" />
+                <line number="48" hits="0" branch="false" />
+                <line number="49" hits="0" branch="false" />
+                <line number="50" hits="0" branch="false" />
+                <line number="52" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Configure" signature="(...)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="56" hits="0" branch="false" />
+                <line number="57" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="58" hits="0" branch="false" />
+                <line number="59" hits="0" branch="false" />
+                <line number="60" hits="0" branch="false" />
+                <line number="62" hits="0" branch="false" />
+                <line number="63" hits="0" branch="false" />
+                <line number="66" hits="0" branch="false" />
+                <line number="67" hits="0" branch="false" />
+                <line number="69" hits="0" branch="false" />
+                <line number="70" hits="0" branch="false" />
+                <line number="72" hits="0" branch="false" />
+                <line number="74" hits="0" branch="false" />
+                <line number="78" hits="0" branch="false" />
+                <line number="79" hits="0" branch="false" />
+                <line number="80" hits="0" branch="false" />
+                <line number="81" hits="0" branch="false" />
+                <line number="82" hits="0" branch="false" />
+                <line number="83" hits="0" branch="false" />
+                <line number="84" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="0" branch="false" />
+                <line number="26" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="25" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="34" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="37" hits="0" branch="false" />
+            <line number="38" hits="0" branch="false" />
+            <line number="41" hits="0" branch="false" />
+            <line number="43" hits="0" branch="false" />
+            <line number="44" hits="0" branch="false" />
+            <line number="45" hits="0" branch="false" />
+            <line number="46" hits="0" branch="false" />
+            <line number="47" hits="0" branch="false" />
+            <line number="48" hits="0" branch="false" />
+            <line number="49" hits="0" branch="false" />
+            <line number="50" hits="0" branch="false" />
+            <line number="52" hits="0" branch="false" />
+            <line number="56" hits="0" branch="false" />
+            <line number="57" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="58" hits="0" branch="false" />
+            <line number="59" hits="0" branch="false" />
+            <line number="60" hits="0" branch="false" />
+            <line number="62" hits="0" branch="false" />
+            <line number="63" hits="0" branch="false" />
+            <line number="66" hits="0" branch="false" />
+            <line number="67" hits="0" branch="false" />
+            <line number="69" hits="0" branch="false" />
+            <line number="70" hits="0" branch="false" />
+            <line number="72" hits="0" branch="false" />
+            <line number="74" hits="0" branch="false" />
+            <line number="78" hits="0" branch="false" />
+            <line number="79" hits="0" branch="false" />
+            <line number="80" hits="0" branch="false" />
+            <line number="81" hits="0" branch="false" />
+            <line number="82" hits="0" branch="false" />
+            <line number="83" hits="0" branch="false" />
+            <line number="84" hits="0" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="OnlineShop.Test" line-rate="0.9821428571428571" branch-rate="1" complexity="7">
+      <classes>
+        <class name="AutoGeneratedProgram" filename="C:\Users\maga\.nuget\packages\microsoft.net.test.sdk\16.5.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="Main" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="4" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="4" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="OnlineShop.Test.Tests" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShop.Test\AdminControllerTests.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name="Setup" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="4" branch="false" />
+                <line number="21" hits="4" branch="false" />
+                <line number="22" hits="4" branch="false" />
+                <line number="24" hits="4" branch="false" />
+                <line number="25" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="TearDown" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="29" hits="4" branch="false" />
+                <line number="30" hits="4" branch="false" />
+                <line number="31" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="Index" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="35" hits="1" branch="false" />
+                <line number="36" hits="1" branch="false" />
+                <line number="38" hits="1" branch="false" />
+                <line number="39" hits="1" branch="false" />
+                <line number="40" hits="1" branch="false" />
+                <line number="41" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+                <line number="43" hits="1" branch="false" />
+                <line number="44" hits="1" branch="false" />
+                <line number="45" hits="1" branch="false" />
+                <line number="47" hits="1" branch="false" />
+                <line number="49" hits="1" branch="false" />
+                <line number="53" hits="1" branch="false" />
+                <line number="54" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Detalis" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="58" hits="1" branch="false" />
+                <line number="59" hits="1" branch="false" />
+                <line number="61" hits="1" branch="false" />
+                <line number="63" hits="1" branch="false" />
+                <line number="64" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Create" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="68" hits="1" branch="false" />
+                <line number="69" hits="1" branch="false" />
+                <line number="72" hits="1" branch="false" />
+                <line number="73" hits="1" branch="false" />
+                <line number="74" hits="1" branch="false" />
+                <line number="75" hits="1" branch="false" />
+                <line number="76" hits="1" branch="false" />
+                <line number="77" hits="1" branch="false" />
+                <line number="78" hits="1" branch="false" />
+                <line number="79" hits="1" branch="false" />
+                <line number="81" hits="1" branch="false" />
+                <line number="83" hits="1" branch="false" />
+                <line number="85" hits="1" branch="false" />
+                <line number="86" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Edit" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="90" hits="1" branch="false" />
+                <line number="91" hits="1" branch="false" />
+                <line number="94" hits="1" branch="false" />
+                <line number="95" hits="1" branch="false" />
+                <line number="96" hits="1" branch="false" />
+                <line number="97" hits="1" branch="false" />
+                <line number="98" hits="1" branch="false" />
+                <line number="99" hits="1" branch="false" />
+                <line number="100" hits="1" branch="false" />
+                <line number="101" hits="1" branch="false" />
+                <line number="103" hits="1" branch="false" />
+                <line number="105" hits="1" branch="false" />
+                <line number="107" hits="1" branch="false" />
+                <line number="108" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="4" branch="false" />
+            <line number="21" hits="4" branch="false" />
+            <line number="22" hits="4" branch="false" />
+            <line number="24" hits="4" branch="false" />
+            <line number="25" hits="4" branch="false" />
+            <line number="29" hits="4" branch="false" />
+            <line number="30" hits="4" branch="false" />
+            <line number="31" hits="4" branch="false" />
+            <line number="35" hits="1" branch="false" />
+            <line number="36" hits="1" branch="false" />
+            <line number="38" hits="1" branch="false" />
+            <line number="39" hits="1" branch="false" />
+            <line number="40" hits="1" branch="false" />
+            <line number="41" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+            <line number="44" hits="1" branch="false" />
+            <line number="45" hits="1" branch="false" />
+            <line number="47" hits="1" branch="false" />
+            <line number="49" hits="1" branch="false" />
+            <line number="53" hits="1" branch="false" />
+            <line number="54" hits="1" branch="false" />
+            <line number="58" hits="1" branch="false" />
+            <line number="59" hits="1" branch="false" />
+            <line number="61" hits="1" branch="false" />
+            <line number="63" hits="1" branch="false" />
+            <line number="64" hits="1" branch="false" />
+            <line number="68" hits="1" branch="false" />
+            <line number="69" hits="1" branch="false" />
+            <line number="72" hits="1" branch="false" />
+            <line number="73" hits="1" branch="false" />
+            <line number="74" hits="1" branch="false" />
+            <line number="75" hits="1" branch="false" />
+            <line number="76" hits="1" branch="false" />
+            <line number="77" hits="1" branch="false" />
+            <line number="78" hits="1" branch="false" />
+            <line number="79" hits="1" branch="false" />
+            <line number="81" hits="1" branch="false" />
+            <line number="83" hits="1" branch="false" />
+            <line number="85" hits="1" branch="false" />
+            <line number="86" hits="1" branch="false" />
+            <line number="90" hits="1" branch="false" />
+            <line number="91" hits="1" branch="false" />
+            <line number="94" hits="1" branch="false" />
+            <line number="95" hits="1" branch="false" />
+            <line number="96" hits="1" branch="false" />
+            <line number="97" hits="1" branch="false" />
+            <line number="98" hits="1" branch="false" />
+            <line number="99" hits="1" branch="false" />
+            <line number="100" hits="1" branch="false" />
+            <line number="101" hits="1" branch="false" />
+            <line number="103" hits="1" branch="false" />
+            <line number="105" hits="1" branch="false" />
+            <line number="107" hits="1" branch="false" />
+            <line number="108" hits="1" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="OnlineShop.Views" line-rate="0" branch-rate="0" complexity="226">
+      <classes>
+        <class name="AspNetCore.Views__ViewStart" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\_ViewStart.cshtml" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="2" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCore.Views_Account_Login" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Account\Login.cshtml" line-rate="0" branch-rate="0" complexity="21">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="3" hits="0" branch="true" condition-coverage="0% (0/2)" />
+              </lines>
+            </method>
+            <method name="&lt;ExecuteAsync" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="&lt;ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="18">
+              <lines>
+                <line number="11" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="13" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="14" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="15" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="19" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="20" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="21" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="26" hits="0" branch="true" condition-coverage="0% (0/2)" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="11" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="13" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="14" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="15" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="19" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="20" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="21" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="26" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="27" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCore.Views_Account_Register" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Account\Register.cshtml" line-rate="0" branch-rate="0" complexity="22">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="3" hits="0" branch="true" condition-coverage="0% (0/2)" />
+              </lines>
+            </method>
+            <method name="&lt;ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="20">
+              <lines>
+                <line number="11" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="13" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="14" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="15" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="19" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="20" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="21" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="25" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="26" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="27" hits="0" branch="true" condition-coverage="0% (0/2)" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="11" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="13" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="14" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="15" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="19" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="20" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="21" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="25" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="26" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="27" hits="0" branch="true" condition-coverage="0% (0/2)" />
+          </lines>
+        </class>
+        <class name="AspNetCore.Views_Admin_Create" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Admin\Create.cshtml" line-rate="0" branch-rate="0" complexity="32">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="4" hits="0" branch="true" condition-coverage="0% (0/4)" />
+              </lines>
+            </method>
+            <method name="&lt;ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="28">
+              <lines>
+                <line number="14" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="16" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="17" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="18" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="22" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="36" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="37" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="38" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="41" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="42" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="43" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="46" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="47" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="48" hits="0" branch="true" condition-coverage="0% (0/2)" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="4" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="14" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="16" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="17" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="18" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="22" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="36" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="37" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="38" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="41" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="42" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="43" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="46" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="47" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="48" hits="0" branch="true" condition-coverage="0% (0/2)" />
+          </lines>
+        </class>
+        <class name="AspNetCore.Views_Admin_Delete" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Admin\Delete.cshtml" line-rate="0" branch-rate="0" complexity="6">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="4" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+                <line number="24" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+                <line number="33" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+                <line number="42" hits="0" branch="true" condition-coverage="0% (0/2)" />
+              </lines>
+            </method>
+            <method name="&lt;ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="47" hits="0" branch="true" condition-coverage="0% (0/4)" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="4" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="33" hits="0" branch="false" />
+            <line number="36" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+            <line number="42" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="47" hits="0" branch="true" condition-coverage="0% (0/4)" />
+          </lines>
+        </class>
+        <class name="AspNetCore.Views_Admin_Details" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Admin\Details.cshtml" line-rate="0" branch-rate="0" complexity="6">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="6">
+              <lines>
+                <line number="4" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+                <line number="23" hits="0" branch="false" />
+                <line number="26" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="32" hits="0" branch="false" />
+                <line number="35" hits="0" branch="false" />
+                <line number="38" hits="0" branch="false" />
+                <line number="41" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="46" hits="0" branch="true" condition-coverage="0% (0/4)" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="4" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="38" hits="0" branch="false" />
+            <line number="41" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="46" hits="0" branch="true" condition-coverage="0% (0/4)" />
+          </lines>
+        </class>
+        <class name="AspNetCore.Views_Admin_Edit" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Admin\Edit.cshtml" line-rate="0" branch-rate="0" complexity="34">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="4" hits="0" branch="true" condition-coverage="0% (0/4)" />
+              </lines>
+            </method>
+            <method name="&lt;ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="30">
+              <lines>
+                <line number="14" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="15" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="17" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="18" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="19" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="23" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="36" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="37" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="38" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="41" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="42" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="43" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="46" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="47" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="48" hits="0" branch="true" condition-coverage="0% (0/2)" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="4" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="14" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="15" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="17" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="18" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="19" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="23" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="36" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="37" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="38" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="41" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="42" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="43" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="46" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="47" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="48" hits="0" branch="true" condition-coverage="0% (0/2)" />
+          </lines>
+        </class>
+        <class name="AspNetCore.Views_Admin_Index" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Admin\Index.cshtml" line-rate="0" branch-rate="0" complexity="23">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="23">
+              <lines>
+                <line number="3" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="15" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+                <line number="24" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+                <line number="33" hits="0" branch="true" condition-coverage="0% (0/9)" />
+                <line number="36" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+                <line number="42" hits="0" branch="false" />
+                <line number="45" hits="0" branch="false" />
+                <line number="48" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="51" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="52" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="53" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="56" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="15" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="33" hits="0" branch="true" condition-coverage="0% (0/9)" />
+            <line number="36" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+            <line number="42" hits="0" branch="false" />
+            <line number="45" hits="0" branch="false" />
+            <line number="48" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="51" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="52" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="53" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="56" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCore.Views_Home_AboutUs" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Home\AboutUs.cshtml" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="3" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCore.Views_Home_Buy" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Home\Buy.cshtml" line-rate="0" branch-rate="0" complexity="11">
+          <methods>
+            <method name="&lt;ExecuteAsync" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="3" hits="0" branch="false" />
+                <line number="4" hits="0" branch="true" condition-coverage="0% (0/2)" />
+              </lines>
+            </method>
+            <method name="&lt;ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="17" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="&lt;ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="13" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="16" hits="0" branch="true" condition-coverage="0% (0/2)" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="0" branch="false" />
+            <line number="4" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="13" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="16" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="17" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCore.Views_Home_Cart" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Home\Cart.cshtml" line-rate="0" branch-rate="0" complexity="8">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="8">
+              <lines>
+                <line number="4" hits="0" branch="false" />
+                <line number="5" hits="0" branch="false" />
+                <line number="10" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="11" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+                <line number="25" hits="0" branch="false" />
+                <line number="28" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="31" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="34" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="4" hits="0" branch="false" />
+            <line number="5" hits="0" branch="false" />
+            <line number="10" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="11" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="25" hits="0" branch="false" />
+            <line number="28" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="31" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="34" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCore.Views_Home_Index" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Home\Index.cshtml" line-rate="0" branch-rate="0" complexity="20">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="3" hits="0" branch="true" condition-coverage="0% (0/2)" />
+              </lines>
+            </method>
+            <method name="&lt;ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="18">
+              <lines>
+                <line number="52" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="53" hits="0" branch="false" />
+                <line number="59" hits="0" branch="false" />
+                <line number="61" hits="0" branch="false" />
+                <line number="62" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="63" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="69" hits="0" branch="false" />
+                <line number="83" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="84" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="88" hits="0" branch="false" />
+                <line number="89" hits="0" branch="false" />
+                <line number="90" hits="0" branch="false" />
+                <line number="91" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="95" hits="0" branch="false" />
+                <line number="96" hits="0" branch="false" />
+                <line number="97" hits="0" branch="false" />
+                <line number="98" hits="0" branch="true" condition-coverage="0% (0/2)" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="52" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="53" hits="0" branch="false" />
+            <line number="59" hits="0" branch="false" />
+            <line number="61" hits="0" branch="false" />
+            <line number="62" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="63" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="69" hits="0" branch="false" />
+            <line number="83" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="84" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="88" hits="0" branch="false" />
+            <line number="89" hits="0" branch="false" />
+            <line number="90" hits="0" branch="false" />
+            <line number="91" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="95" hits="0" branch="false" />
+            <line number="96" hits="0" branch="false" />
+            <line number="97" hits="0" branch="false" />
+            <line number="98" hits="0" branch="true" condition-coverage="0% (0/2)" />
+          </lines>
+        </class>
+        <class name="AspNetCore.Views_Home_Privacy" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Home\Privacy.cshtml" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="2" hits="0" branch="false" />
+                <line number="4" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="0" branch="false" />
+            <line number="4" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCore.Views_Home_ProductView" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Home\ProductView.cshtml" line-rate="0" branch-rate="0" complexity="6">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="6">
+              <lines>
+                <line number="3" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+                <line number="24" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+                <line number="33" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
+                <line number="39" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="44" hits="0" branch="true" condition-coverage="0% (0/4)" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="33" hits="0" branch="false" />
+            <line number="36" hits="0" branch="false" />
+            <line number="39" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="44" hits="0" branch="true" condition-coverage="0% (0/4)" />
+          </lines>
+        </class>
+        <class name="AspNetCore.Views_Shared__Layout" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Shared\_Layout.cshtml" line-rate="0" branch-rate="0" complexity="32">
+          <methods>
+            <method name="&lt;ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="12" hits="0" branch="true" condition-coverage="0% (0/4)" />
+              </lines>
+            </method>
+            <method name="&lt;ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="28">
+              <lines>
+                <line number="26" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="27" hits="0" branch="true" condition-coverage="0% (0/6)" />
+                <line number="39" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="40" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="43" hits="0" branch="false" />
+                <line number="44" hits="0" branch="false" />
+                <line number="46" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="55" hits="0" branch="false" />
+                <line number="62" hits="0" branch="true" condition-coverage="0% (0/6)" />
+                <line number="73" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="74" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="26" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="27" hits="0" branch="true" condition-coverage="0% (0/6)" />
+            <line number="39" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="40" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="43" hits="0" branch="false" />
+            <line number="44" hits="0" branch="false" />
+            <line number="46" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="55" hits="0" branch="false" />
+            <line number="62" hits="0" branch="true" condition-coverage="0% (0/6)" />
+            <line number="73" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="74" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCore.Views_Shared_Error" filename="C:\Users\maga\Desktop\GitRepos\OnlineShop\OnlineShopNew\Views\Shared\Error.cshtml" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="3" hits="0" branch="false" />
+                <line number="9" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="10" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="0" branch="false" />
+            <line number="9" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="10" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
