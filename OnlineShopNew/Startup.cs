@@ -19,7 +19,6 @@ namespace OnlineShop
     /// <summary>
     /// asdasda.
     /// </summary>
-    /// 
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -67,6 +66,7 @@ namespace OnlineShop
             }
 
             app.UseHttpsRedirection();
+            
             app.UseStaticFiles();
 
             app.UseRouting();

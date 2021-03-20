@@ -60,6 +60,7 @@ namespace OnlineShop.Controllers
             {
                 _context.Add(productModel);
                 await _context.SaveChangesAsync();
+                
                 return RedirectToAction(nameof(Index));
             }
 
@@ -118,6 +119,7 @@ namespace OnlineShop.Controllers
         }
 
         // GET: Product/Delete/5
+        [HttpGet]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -127,6 +129,7 @@ namespace OnlineShop.Controllers
 
             var productModel = await _context.Products
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (productModel == null)
             {
                 return NotFound();
@@ -141,8 +144,11 @@ namespace OnlineShop.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var productModel = await _context.Products.FindAsync(id);
+            
             _context.Products.Remove(productModel);
+            
             await _context.SaveChangesAsync();
+            
             return RedirectToAction(nameof(Index));
         }
 

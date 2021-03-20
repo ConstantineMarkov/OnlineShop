@@ -7,6 +7,8 @@ using OnlineShop.Controllers;
 using OnlineShop.Data;
 using Microsoft.EntityFrameworkCore.InMemory;
 using System;
+using OnlineShop.Models;
+using System.Linq;
 
 namespace OnlineShop.Test
 {
@@ -33,9 +35,9 @@ namespace OnlineShop.Test
         [Test]
         public void Index()
         {
-            AdminController ac = new AdminController(ctxt);
+            AdminController ac = new(ctxt);
 
-            ctxt.Products.Add(new Models.ProductModel
+            ctxt.Products.Add(new ProductModel
             {
                 Name = "asd",
                 CategoryId = "T-Shirt",
@@ -56,7 +58,7 @@ namespace OnlineShop.Test
         [Test]
         public void Detalis()
         {
-            AdminController ac = new AdminController(ctxt);
+            AdminController ac = new(ctxt);
 
             var res = ac.Details(null) as IActionResult;
 
@@ -66,21 +68,22 @@ namespace OnlineShop.Test
         [Test]
         public void Create()
         {
-            AdminController ac = new AdminController(ctxt);
+            AdminController ac = new(ctxt);
 
-
-            ctxt.Products.Add(new Models.ProductModel
+            ProductModel pm = new ProductModel
             {
                 Name = "asd",
                 CategoryId = "T-Shirt",
                 Count = 100,
                 Price = 100,
                 Description = "asd"
-            });
+            };
+
+            ctxt.Products.Add(pm);
 
             ctxt.SaveChanges();
 
-            var res = ac.Create();
+            var res = ac.Create(pm);
 
             Assert.NotNull(res);
         }
@@ -88,10 +91,35 @@ namespace OnlineShop.Test
         [Test]
         public void Edit()
         {
-            AdminController ac = new AdminController(ctxt);
+            AdminController ac = new(ctxt);
 
 
-            ctxt.Products.Add(new Models.ProductModel
+            ctxt.Products.Add(new ProductModel
+            {
+                Name = "asd",
+                CategoryId = "T-Shirt",
+                Count = 100,
+                Price = 100,
+                Description = "asd"
+            });
+
+            ctxt.SaveChanges();
+            
+            var products = ctxt.Products.ToList();
+
+            var res = ac.Edit(products.FirstOrDefault().Id);
+
+            ViewResult result = res.Result  as ViewResult;
+
+            Assert.AreEqual("Edit" ,result.ViewName);
+        }
+
+        [Test]
+        public void EditPost()
+        {
+            AdminController ac = new(ctxt);
+
+            ctxt.Products.Add(new ProductModel
             {
                 Name = "asd",
                 CategoryId = "T-Shirt",
@@ -102,9 +130,57 @@ namespace OnlineShop.Test
 
             ctxt.SaveChanges();
 
-            var res =  ac.Edit(ctxt.Products.FirstOrDefaultAsync().Id);
+            ProductModel prod = ctxt.Products.FirstOrDefaultAsync().Result;
 
-            Assert.NotNull(res);
+            var res = ac.Edit(ctxt.Products.FirstOrDefaultAsync().Id, prod);
+
+            prod.Name = "poredniq exception";
+
+
+            Assert.NotNull(res.Id);
+            Assert.AreEqual("poredniq exception", prod.Name);
+        }
+
+        [Test]
+        public void Delete()
+        {
+            AdminController ac = new(ctxt);
+
+            ctxt.Products.Add(new ProductModel
+            {
+                Name = "asd",
+                CategoryId = "T-Shirt",
+                Count = 100,
+                Price = 100,
+                Description = "asd"
+            });
+
+            ctxt.SaveChanges();
+
+            var res = ac.Delete(ctxt.Products.FirstOrDefaultAsync().Id);
+
+            Assert.NotNull(res.Id);
+        }
+
+        [Test]
+        public void DeleteConfirmed()
+        {
+            AdminController ac = new(ctxt);
+
+            ctxt.Products.Add(new ProductModel
+            {
+                Name = "asd",
+                CategoryId = "T-Shirt",
+                Count = 100,
+                Price = 100,
+                Description = "asd"
+            });
+
+            ctxt.SaveChanges();
+
+            var res = ac.DeleteConfirmed(ctxt.Products.FirstOrDefaultAsync().Id);
+
+            Assert.NotNull(res.Id);
         }
     }
 }

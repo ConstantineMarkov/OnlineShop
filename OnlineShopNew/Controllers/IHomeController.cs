@@ -11,17 +11,22 @@ namespace OnlineShop.Controllers
 {
     public interface IHomeController
     {
-        int CurrentPageIndex { get; set; }
-        int PageCount { get; set; }
-
         IActionResult AboutUs();
+        
         IActionResult Buy();
+        
         Task<IActionResult> Buy(int? id, CartModel cart);
+        
         Task<IActionResult> Cart();
+        
         List<CartModel> CartList();
+        
         IActionResult Error();
+        
         Task<IActionResult> Index(int? pageNumber);
+        
         Task<IActionResult> Order();
+        
         Task<IActionResult> ProductView(int? id);
     }
 }
