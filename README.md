@@ -14,7 +14,7 @@
 
 ## Development setup
 
-> Ima nqkolko nuget package-a, koito bi trqbvalo da se instalirat avtomatichno, ako kodite na vs ili vs code.
+> 
 
 ## Technologies used
 > ASP.NET Core<br />
@@ -24,7 +24,7 @@
 
 ## Release History
 
-> Da go napravim.
+> TO DO.
 
 ## Documentation used to write the project
 
@@ -37,7 +37,3 @@
 * [IdentityFramework](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-5.0&tabs=visual-studio)
 * [IdentityFramework](https://docs.microsoft.com/en-us/aspnet/core/security/authorization/secure-data?view=aspnetcore-5.0)
 
-## Meta
-
-Konstantin Markov - kosyo.marko@gmail.com, nqmam drugi socialni medii<br />
-Martin Svilenski  - m.svilenski@gmail.com, marto sushto
