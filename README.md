@@ -6,8 +6,6 @@
 
 > A system for selling products on the web.
 
-![alt text](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flearningcontent.cisco.com%2Fimages%2FKA_FirstStepsCoding_Expectation_vs_Reality_v4.png&f=1&nofb=1)
-
 ## Installation
 
 > Download, upload to server and run.
